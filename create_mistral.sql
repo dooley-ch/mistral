@@ -18,9 +18,9 @@ CREATE TABLE employee (
 	hire_date            date  NOT NULL ,
 	address              text  NOT NULL ,
 	city                 text  NOT NULL ,
-	state                text  ,
+	state                text   ,
 	country              text   ,
-	post_code            text  ,
+	post_code            text   ,
 	phone                text   ,
 	fax                  text   ,
 	email                text  NOT NULL ,
@@ -89,9 +89,9 @@ CREATE TABLE customer (
 	company              text   ,
 	address              text  NOT NULL ,
 	city                 text  NOT NULL ,
-	state                text  ,
+	state                text   ,
 	country              text  NOT NULL ,
-	post_code            text  ,
+	post_code            text   ,
 	phone                text   ,
 	fax                  text   ,
 	email                text  NOT NULL ,
@@ -111,9 +111,9 @@ CREATE TABLE invoice (
 	invoice_date         datetime  NOT NULL ,
 	address              text  NOT NULL ,
 	city                 text  NOT NULL ,
-	state                text  ,
+	state                text   ,
 	country              text  NOT NULL ,
-	post_code            text  ,
+	post_code            text   ,
 	total                text  NOT NULL ,
 	customer_id          integer  NOT NULL ,
 	version              integer  NOT NULL DEFAULT 1,
@@ -127,7 +127,7 @@ CREATE UNIQUE INDEX Pk_invoice_ID ON invoice ( ID );
 CREATE INDEX Idx_invoice_customer_id ON invoice ( customer_id );
 
 CREATE TABLE track ( 
-	ID                   integer  NOT NULL ,
+	ID                   integer PRIMARY KEY AUTOINCREMENT NOT NULL ,
 	name                 text  NOT NULL ,
 	composer             text   ,
 	milliseconds         integer   ,
@@ -178,6 +178,7 @@ CREATE TABLE playlist_track (
 	version              integer  NOT NULL DEFAULT 1,
 	created_at           timestamp  NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	updated_at           timestamp  NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	CONSTRAINT Uk_playlist_track_playlist_id_track_id UNIQUE ( playlist_id, track_id ) ,
 	FOREIGN KEY ( playlist_id ) REFERENCES playlist( ID )  ,
 	FOREIGN KEY ( track_id ) REFERENCES track( ID )  
  );

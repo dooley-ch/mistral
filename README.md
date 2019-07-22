@@ -6,4 +6,10 @@ An enhanced version of the [Chinook sample database](https://github.com/lerocha/
 
 ![Entity Diagram](entity-diagram.png)
 
+## Changes
+
+Date | Description
+-------|------------------
+22.07.19 | Changed Track ID to auto increment
+22.07.19 | Added Unique Key to playlist_track (playlist_id, track_id)
 
