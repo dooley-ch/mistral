@@ -73,7 +73,6 @@ CREATE INDEX Idx_album_artist_id ON album ( artist_id );
 
 CREATE TABLE customer ( 
 	ID                   integer NOT NULL  PRIMARY KEY autoincrement ,
-	title                text     ,
 	first_name           text NOT NULL    ,
 	last_name            text NOT NULL    ,
 	company              text     ,
