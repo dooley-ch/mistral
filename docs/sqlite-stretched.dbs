@@ -30,7 +30,6 @@
 		</table>
 		<table name="customer" >
 			<column name="ID" type="integer" jt="4" mandatory="y" autoincrement="y" />
-			<column name="title" type="text" jt="-1" />
 			<column name="first_name" type="text" length="100" jt="-1" mandatory="y" />
 			<column name="last_name" type="text" length="100" jt="-1" mandatory="y" />
 			<column name="cust_pic" type="blob" jt="2004" />
@@ -245,8 +244,8 @@
 		<entity schema="Default" name="employee" color="008000" x="528" y="384" />
 		<entity schema="Default" name="playlist_track" color="008000" x="48" y="416" />
 		<entity schema="Default" name="playlist" color="008000" x="80" y="96" />
-		<entity schema="Default" name="customer" color="008000" x="752" y="80" />
 		<entity schema="Default" name="invoice" color="008000" x="768" y="672" />
+		<entity schema="Default" name="customer" color="008000" x="752" y="80" />
 		<group name="Business" color="99B3FF" >
 			<entity schema="Default" name="album" />
 			<entity schema="Default" name="artist" />
