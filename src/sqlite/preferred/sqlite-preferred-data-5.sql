@@ -47,9 +47,9 @@ INSERT INTO xxx_application(action, record_id, version_id, usr, app, key, name, 
 INSERT INTO xxx_artist(action, record_id, version_id, usr, app, name, name_lower)
     SELECT 'I', ID, version, 'ghg-456', 1, name, name_lower FROM artist;
 
-INSERT INTO xxx_customer(action, record_id, version_id, usr, app, title, first_name, last_name, company,
+INSERT INTO xxx_customer(action, record_id, version_id, usr, app, first_name, last_name, company,
                          address, city, state, country, post_code, phone, fax, email, support_rep_id)
-    SELECT 'I', ID, version, 'rytr-345', 1, title, first_name, last_name, company, address, city, state, country,
+    SELECT 'I', ID, version, 'rytr-345', 1, first_name, last_name, company, address, city, state, country,
            post_code, phone, fax, email, support_rep_id FROM customer;
 
 INSERT INTO xxx_employee(action, record_id, version_id, usr, app, title, first_name, last_name, address, city, state,
