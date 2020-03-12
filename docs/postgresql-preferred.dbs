@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="Mistral" id="Project_54b6f48" database="PostgreSQL" >
+	<schema name="Default" >
+		<table name="activity_log" >
+			<column name="ID" type="bigserial" jt="-5" mandatory="y" autoincrement="y" />
+			<column name="app_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="message" type="text" length="0" decimal="0" jt="12" mandatory="y" />
+			<index name="Pk_activity_log_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<fk name="fk_activity_log_application" to_schema="Default" to_table="application" delete_action="cascade" update_action="cascade" >
+				<fk_column name="app_id" pk="ID" />
+			</fk>
+		</table>
+		<table name="album" >
+			<column name="ID" type="serial" jt="4" mandatory="y" autoincrement="y" />
+			<column name="title" type="varchar" length="120" decimal="0" jt="12" mandatory="y" />
+			<column name="title_lower" type="varchar" length="120" decimal="0" jt="12" mandatory="y" />
+			<column name="artist_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version" type="smallint" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="created_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="updated_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<index name="Pk_album_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<index name="Idx_album_artist_id" unique="NORMAL" >
+				<column name="artist_id" />
+			</index>
+			<index name="Uk_album_title" unique="UNIQUE" >
+				<column name="title_lower" />
+			</index>
+			<fk name="Fk_album_artist" to_schema="Default" to_table="artist" >
+				<fk_column name="artist_id" pk="ID" />
+			</fk>
+		</table>
+		<table name="application" >
+			<column name="ID" type="serial" jt="4" mandatory="y" autoincrement="y" />
+			<column name="key" type="char" length="3" decimal="0" jt="1" mandatory="y" />
+			<column name="name" type="varchar" length="100" decimal="0" jt="12" mandatory="y" />
+			<column name="comments" type="text" length="0" decimal="0" jt="12" />
+			<column name="version" type="smallint" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="created_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="updated_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<index name="Pk_application_id" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<index name="uk_application" unique="UNIQUE" >
+				<column name="key" />
+			</index>
+			<constraint name="Cns_application_key" >
+				<string>key IS NOT NULL OR LENGTH(key) = 3</string>
+			</constraint>
+			<constraint name="Cns_application_name" >
+				<string>CHECK (name IS NOT NULL OR LENGTH(name) &gt;= 5 )</string>
+			</constraint>
+		</table>
+		<table name="artist" >
+			<column name="ID" type="serial" jt="4" mandatory="y" autoincrement="y" />
+			<column name="name" type="varchar" length="100" decimal="0" jt="12" mandatory="y" />
+			<column name="name_lower" type="varchar" length="100" decimal="0" jt="12" mandatory="y" />
+			<column name="version" type="smallint" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="created_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="updated_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<index name="Pk_artist_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<index name="Uk_artist_name" unique="UNIQUE" >
+				<column name="name_lower" />
+			</index>
+		</table>
+		<table name="customer" >
+			<column name="ID" type="serial" jt="4" mandatory="y" autoincrement="y" />
+			<column name="first_name" type="varchar" length="30" decimal="0" jt="12" mandatory="y" />
+			<column name="last_name" type="varchar" length="60" decimal="0" jt="12" mandatory="y" />
+			<column name="company" type="varchar" length="60" decimal="0" jt="12" />
+			<column name="address" type="varchar" length="50" decimal="0" jt="12" mandatory="y" />
+			<column name="city" type="varchar" length="30" decimal="0" jt="12" mandatory="y" />
+			<column name="state" type="varchar" length="12" decimal="0" jt="12" />
+			<column name="country" type="varchar" length="25" decimal="0" jt="12" mandatory="y" />
+			<column name="post_code" type="varchar" length="12" decimal="0" jt="12" />
+			<column name="phone" type="varchar" length="25" decimal="0" jt="12" />
+			<column name="fax" type="varchar" length="25" decimal="0" jt="12" />
+			<column name="email" type="varchar" length="50" decimal="0" jt="12" mandatory="y" />
+			<column name="support_rep_id" type="integer" length="0" decimal="0" jt="4" />
+			<column name="version" type="smallint" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="created_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="updated_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<index name="Pk_customer_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<index name="Idx_customer_support_rep_id" unique="NORMAL" >
+				<column name="support_rep_id" />
+			</index>
+			<index name="Uk_customer_email" unique="UNIQUE" >
+				<column name="email" />
+			</index>
+			<fk name="Fk_customer_employee" to_schema="Default" to_table="employee" >
+				<fk_column name="support_rep_id" pk="ID" />
+			</fk>
+		</table>
+		<table name="employee" >
+			<column name="ID" type="serial" jt="4" mandatory="y" autoincrement="y" />
+			<column name="title" type="varchar" length="25" decimal="0" jt="12" />
+			<column name="first_name" type="varchar" length="30" decimal="0" jt="12" mandatory="y" />
+			<column name="last_name" type="varchar" length="60" decimal="0" jt="12" mandatory="y" />
+			<column name="date_of_birth" type="date" length="0" decimal="0" jt="91" />
+			<column name="hire_date" type="date" length="0" decimal="0" jt="91" mandatory="y" />
+			<column name="address" type="varchar" length="50" decimal="0" jt="12" mandatory="y" />
+			<column name="city" type="varchar" length="30" decimal="0" jt="12" mandatory="y" />
+			<column name="state" type="varchar" length="12" decimal="0" jt="12" />
+			<column name="country" type="varchar" length="25" decimal="0" jt="12" />
+			<column name="post_code" type="varchar" length="12" decimal="0" jt="12" />
+			<column name="phone" type="varchar" length="25" decimal="0" jt="12" />
+			<column name="fax" type="varchar" length="25" decimal="0" jt="12" />
+			<column name="email" type="varchar" length="50" decimal="0" jt="12" mandatory="y" />
+			<column name="manager_id" type="integer" length="0" decimal="0" jt="4" />
+			<column name="version" type="smallint" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="created_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="updated_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<index name="Pk_employee_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<index name="Idx_employee_manager_id" unique="NORMAL" >
+				<column name="manager_id" />
+			</index>
+			<index name="Idx_employee_email" unique="UNIQUE" >
+				<column name="email" />
+			</index>
+			<fk name="Fk_employee_employee" to_schema="Default" to_table="employee" >
+				<fk_column name="manager_id" pk="ID" />
+			</fk>
+		</table>
+		<table name="genre" >
+			<column name="ID" type="serial" jt="4" mandatory="y" autoincrement="y" />
+			<column name="name" type="varchar" length="30" decimal="0" jt="12" mandatory="y" />
+			<column name="name_lower" type="varchar" length="30" decimal="0" jt="12" mandatory="y" />
+			<column name="version" type="smallint" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="created_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="updated_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<index name="Pk_genre_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<index name="Uk_genre_name" unique="UNIQUE" >
+				<column name="name_lower" />
+			</index>
+		</table>
+		<table name="invoice" >
+			<column name="ID" type="serial" jt="4" mandatory="y" autoincrement="y" />
+			<column name="invoice_date" type="date" length="0" decimal="0" jt="91" mandatory="y" />
+			<column name="address" type="varchar" length="50" decimal="0" jt="12" mandatory="y" />
+			<column name="city" type="varchar" length="25" decimal="0" jt="12" mandatory="y" />
+			<column name="state" type="varchar" length="12" decimal="0" jt="12" />
+			<column name="country" type="varchar" length="30" decimal="0" jt="12" mandatory="y" />
+			<column name="post_code" type="varchar" length="12" decimal="0" jt="12" />
+			<column name="total" type="decimal" jt="3" mandatory="y" />
+			<column name="customer_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version" type="smallint" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="created_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="updated_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<index name="Pk_invoice_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<index name="Idx_invoice_customer_id" unique="NORMAL" >
+				<column name="customer_id" />
+			</index>
+			<fk name="Fk_invoice_customer" to_schema="Default" to_table="customer" >
+				<fk_column name="customer_id" pk="ID" />
+			</fk>
+		</table>
+		<table name="invoice_item" >
+			<column name="ID" type="serial" jt="4" mandatory="y" autoincrement="y" />
+			<column name="quantity" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="unit_price" type="decimal" jt="3" mandatory="y" />
+			<column name="track_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="invoice_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version" type="smallint" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="created_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="updated_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<index name="Pk_invoice_item_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<index name="Idx_invoice_item_track_id" unique="NORMAL" >
+				<column name="track_id" />
+			</index>
+			<index name="Idx_invoice_item_invoice_id" unique="NORMAL" >
+				<column name="invoice_id" />
+			</index>
+			<fk name="Fk_invoice_item_track" to_schema="Default" to_table="track" >
+				<fk_column name="track_id" pk="ID" />
+			</fk>
+			<fk name="Fk_invoice_item_invoice" to_schema="Default" to_table="invoice" >
+				<fk_column name="invoice_id" pk="ID" />
+			</fk>
+		</table>
+		<table name="log" >
+			<column name="ID" type="bigserial" jt="-5" mandatory="y" autoincrement="y" />
+			<column name="app_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="entry_type" type="varchar" length="10" decimal="0" jt="12" mandatory="y" />
+			<column name="logged_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="message" type="text" length="0" decimal="0" jt="12" mandatory="y" />
+			<column name="method_name" type="varchar" length="100" decimal="0" jt="12" />
+			<column name="stack" type="text" length="0" decimal="0" jt="12" />
+			<column name="extra" type="text" length="0" decimal="0" jt="12" />
+			<index name="Pk_log_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<constraint name="Cns_log_entry_type" >
+				<string>entry_type IN (&#039;INFO&#039;, &#039;WARNING&#039;, &#039;ERROR&#039;, &#039;FATAL&#039;, &#039;DEBUG&#039;)</string>
+			</constraint>
+			<fk name="fk_log_application" to_schema="Default" to_table="application" >
+				<fk_column name="app_id" pk="ID" />
+			</fk>
+		</table>
+		<table name="media_type" >
+			<column name="ID" type="serial" jt="4" mandatory="y" autoincrement="y" />
+			<column name="name" type="varchar" length="40" decimal="0" jt="12" mandatory="y" />
+			<column name="name_lower" type="varchar" length="40" decimal="0" jt="12" mandatory="y" />
+			<column name="version" type="smallint" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="created_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="updated_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<index name="Pk_media_type_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<index name="Uk_media_type_name" unique="UNIQUE" >
+				<column name="name_lower" />
+			</index>
+		</table>
+		<table name="playlist" >
+			<column name="ID" type="serial" jt="4" mandatory="y" autoincrement="y" />
+			<column name="name" type="varchar" length="40" decimal="0" jt="12" mandatory="y" />
+			<column name="name_lower" type="varchar" length="40" decimal="0" jt="12" mandatory="y" />
+			<column name="version" type="smallint" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="created_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="updated_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<index name="Pk_playlist_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<index name="Uk_playlist_name" unique="UNIQUE" >
+				<column name="name_lower" />
+			</index>
+		</table>
+		<table name="playlist_track" >
+			<column name="ID" type="serial" jt="4" mandatory="y" autoincrement="y" />
+			<column name="playlist_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="track_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version" type="smallint" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="created_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="updated_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<index name="Pk_playlist_track_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<index name="Idx_playlist_track_playlist_id" unique="NORMAL" >
+				<column name="playlist_id" />
+			</index>
+			<index name="Idx_playlist_track_track_id" unique="NORMAL" >
+				<column name="track_id" />
+			</index>
+			<index name="Uk_playlist_track_playlist_id_track_id" unique="UNIQUE" >
+				<column name="playlist_id" />
+				<column name="track_id" />
+			</index>
+			<fk name="Fk_playlist_track_playlist" to_schema="Default" to_table="playlist" >
+				<fk_column name="playlist_id" pk="ID" />
+			</fk>
+			<fk name="Fk_playlist_track_track" to_schema="Default" to_table="track" >
+				<fk_column name="track_id" pk="ID" />
+			</fk>
+		</table>
+		<table name="setup" >
+			<column name="ID" type="serial" jt="4" mandatory="y" autoincrement="y" />
+			<column name="key" type="varchar" length="20" decimal="0" jt="12" mandatory="y" />
+			<column name="value" type="varchar" length="300" decimal="0" jt="12" mandatory="y" />
+			<column name="data_type" type="varchar" length="20" decimal="0" jt="12" mandatory="y" />
+			<column name="app_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version" type="smallint" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="created_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="updated_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<index name="Pk_setup_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<fk name="fk_setup_application" to_schema="Default" to_table="application" delete_action="cascade" update_action="cascade" >
+				<fk_column name="app_id" pk="ID" />
+			</fk>
+		</table>
+		<table name="track" >
+			<column name="ID" type="serial" jt="4" mandatory="y" autoincrement="y" />
+			<column name="name" type="varchar" length="150" decimal="0" jt="12" mandatory="y" />
+			<column name="composer" type="varchar" length="200" decimal="0" jt="12" />
+			<column name="milliseconds" type="integer" length="0" decimal="0" jt="4" />
+			<column name="bytes" type="integer" length="0" decimal="0" jt="4" />
+			<column name="unit_price" type="decimal" jt="3" mandatory="y" />
+			<column name="album_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="media_type_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="genre_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version" type="smallint" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="created_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="updated_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<index name="Pk_track_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<index name="Idx_track_album_id" unique="NORMAL" >
+				<column name="album_id" />
+			</index>
+			<index name="Idx_track_media_type_id" unique="NORMAL" >
+				<column name="media_type_id" />
+			</index>
+			<index name="Idx_track_genre_id" unique="NORMAL" >
+				<column name="genre_id" />
+			</index>
+			<fk name="Fk_track_album" to_schema="Default" to_table="album" >
+				<fk_column name="album_id" pk="ID" />
+			</fk>
+			<fk name="Fk_track_media_type" to_schema="Default" to_table="media_type" >
+				<fk_column name="media_type_id" pk="ID" />
+			</fk>
+			<fk name="Fk_track_genre" to_schema="Default" to_table="genre" >
+				<fk_column name="genre_id" pk="ID" />
+			</fk>
+		</table>
+		<table name="user_setup" >
+			<column name="ID" type="serial" jt="4" mandatory="y" autoincrement="y" />
+			<column name="key" type="varchar" length="20" decimal="0" jt="12" mandatory="y" />
+			<column name="value" type="varchar" length="300" decimal="0" jt="12" mandatory="y" />
+			<column name="data_type" type="varchar" length="20" decimal="0" jt="12" mandatory="y" />
+			<column name="usr" type="varchar" length="30" decimal="0" jt="12" mandatory="y" />
+			<column name="app_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version" type="smallint" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="created_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="updated_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<index name="Pk_user_setup_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<fk name="fk_setup_application_0" to_schema="Default" to_table="application" delete_action="cascade" update_action="cascade" >
+				<fk_column name="app_id" pk="ID" />
+			</fk>
+		</table>
+		<table name="version" >
+			<column name="ID" type="serial" jt="4" mandatory="y" autoincrement="y" />
+			<column name="major" type="smallint" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="minor" type="smallint" length="0" decimal="0" jt="5" mandatory="y" >
+				<defo>0</defo>
+			</column>
+			<column name="build" type="smallint" length="0" decimal="0" jt="5" mandatory="y" >
+				<defo>1</defo>
+			</column>
+			<column name="started_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="ended_at" type="timestamp" length="0" decimal="0" jt="93" />
+			<column name="status" type="varchar" length="10" decimal="0" jt="12" mandatory="y" >
+				<defo>&#039;STARTED&#039;</defo>
+			</column>
+			<column name="comments" type="text" length="0" decimal="0" jt="12" />
+			<index name="Pk_version_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+			<constraint name="Cns_version_status" >
+				<string>status in (&#039;STARTED&#039;, &#039;RUNNING&#039;, &#039;ENDED&#039;, &#039;FAILED&#039;)</string>
+			</constraint>
+		</table>
+		<table name="xxx_album" >
+			<column name="ID" type="bigserial" jt="-5" mandatory="y" autoincrement="y" />
+			<column name="changed_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="action" type="char" length="1" decimal="0" jt="1" mandatory="y" />
+			<column name="record_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version_id" type="smallint" jt="5" mandatory="y" />
+			<column name="usr" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="app" type="varchar" decimal="0" jt="12" />
+			<column name="title" type="varchar" length="120" decimal="0" jt="12" />
+			<column name="title_lower" type="varchar" length="120" decimal="0" jt="12" />
+			<column name="artist_id" type="integer" length="0" decimal="0" jt="4" />
+			<index name="Pk_xxx_album_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+		</table>
+		<table name="xxx_application" >
+			<column name="ID" type="bigserial" jt="-5" mandatory="y" autoincrement="y" />
+			<column name="changed_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="action" type="char" length="1" decimal="0" jt="1" mandatory="y" />
+			<column name="record_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version_id" type="smallint" jt="5" mandatory="y" />
+			<column name="usr" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="app" type="integer" length="250" decimal="0" jt="4" />
+			<column name="key" type="char" length="3" decimal="0" jt="1" />
+			<column name="name" type="varchar" length="100" decimal="0" jt="12" />
+			<column name="comments" type="text" length="0" decimal="0" jt="12" />
+			<index name="Pk_xxx_application_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+		</table>
+		<table name="xxx_artist" >
+			<column name="ID" type="bigserial" jt="-5" mandatory="y" autoincrement="y" />
+			<column name="changed_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="action" type="char" length="1" decimal="0" jt="1" mandatory="y" />
+			<column name="record_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version_id" type="smallint" jt="5" mandatory="y" />
+			<column name="usr" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="app" type="integer" length="250" decimal="0" jt="4" />
+			<column name="name" type="varchar" length="100" decimal="0" jt="12" />
+			<column name="name_lower" type="varchar" length="100" decimal="0" jt="12" />
+			<index name="Pk_xxx_artist_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+		</table>
+		<table name="xxx_customer" >
+			<column name="ID" type="bigserial" jt="-5" mandatory="y" autoincrement="y" />
+			<column name="changed_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="action" type="char" length="1" decimal="0" jt="1" mandatory="y" />
+			<column name="record_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version_id" type="smallint" jt="5" mandatory="y" />
+			<column name="usr" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="app" type="integer" length="250" decimal="0" jt="4" />
+			<column name="first_name" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="last_name" type="varchar" length="60" decimal="0" jt="12" />
+			<column name="company" type="varchar" length="60" decimal="0" jt="12" />
+			<column name="address" type="varchar" length="50" decimal="0" jt="12" />
+			<column name="city" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="state" type="varchar" length="12" decimal="0" jt="12" />
+			<column name="country" type="varchar" length="25" decimal="0" jt="12" />
+			<column name="post_code" type="varchar" length="12" decimal="0" jt="12" />
+			<column name="phone" type="varchar" length="25" decimal="0" jt="12" />
+			<column name="fax" type="varchar" length="25" decimal="0" jt="12" />
+			<column name="email" type="varchar" length="50" decimal="0" jt="12" />
+			<column name="support_rep_id" type="integer" length="0" decimal="0" jt="4" />
+			<index name="Pk_xxx_customer_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+		</table>
+		<table name="xxx_employee" >
+			<column name="ID" type="bigserial" jt="-5" mandatory="y" autoincrement="y" />
+			<column name="changed_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="action" type="char" length="1" decimal="0" jt="1" mandatory="y" />
+			<column name="record_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version_id" type="smallint" jt="5" mandatory="y" />
+			<column name="usr" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="app" type="integer" length="250" decimal="0" jt="4" />
+			<column name="title" type="varchar" length="25" decimal="0" jt="12" />
+			<column name="first_name" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="last_name" type="varchar" length="60" decimal="0" jt="12" />
+			<column name="address" type="varchar" length="50" decimal="0" jt="12" />
+			<column name="city" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="state" type="varchar" length="12" decimal="0" jt="12" mandatory="y" />
+			<column name="country" type="varchar" length="25" decimal="0" jt="12" />
+			<column name="post_code" type="varchar" length="12" decimal="0" jt="12" />
+			<column name="phone" type="varchar" length="25" decimal="0" jt="12" />
+			<column name="fax" type="varchar" length="25" decimal="0" jt="12" />
+			<column name="email" type="varchar" length="50" decimal="0" jt="12" />
+			<column name="manager_id" type="integer" length="0" decimal="0" jt="4" />
+			<index name="Pk_xxx_employee_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+		</table>
+		<table name="xxx_genre" >
+			<column name="ID" type="bigserial" jt="-5" mandatory="y" autoincrement="y" />
+			<column name="changed_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="action" type="char" length="1" decimal="0" jt="1" mandatory="y" />
+			<column name="record_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version_id" type="smallint" jt="5" mandatory="y" />
+			<column name="usr" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="app" type="integer" length="250" decimal="0" jt="4" />
+			<column name="name" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="name_lower" type="varchar" length="30" decimal="0" jt="12" />
+			<index name="Pk_xxx_genre_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+		</table>
+		<table name="xxx_invoice" >
+			<column name="ID" type="bigserial" jt="-5" mandatory="y" autoincrement="y" />
+			<column name="changed_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="action" type="char" length="1" decimal="0" jt="1" mandatory="y" />
+			<column name="record_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version_id" type="smallint" jt="5" mandatory="y" />
+			<column name="usr" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="app" type="integer" length="250" decimal="0" jt="4" />
+			<column name="invoice_date" type="date" length="0" decimal="0" jt="91" />
+			<column name="address" type="varchar" length="50" decimal="0" jt="12" />
+			<column name="city" type="varchar" length="25" decimal="0" jt="12" />
+			<column name="state" type="varchar" length="12" decimal="0" jt="12" />
+			<column name="country" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="post_code" type="varchar" length="12" decimal="0" jt="12" />
+			<column name="total" type="decimal" jt="3" />
+			<column name="customer_id" type="integer" length="0" decimal="0" jt="4" />
+			<index name="Pk_xxx_invoice_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+		</table>
+		<table name="xxx_invoice_item" >
+			<column name="ID" type="bigserial" jt="-5" mandatory="y" autoincrement="y" />
+			<column name="changed_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="action" type="char" length="1" decimal="0" jt="1" mandatory="y" />
+			<column name="record_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version_id" type="smallint" jt="5" mandatory="y" />
+			<column name="usr" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="app" type="integer" length="250" decimal="0" jt="4" />
+			<column name="invoice_id" type="integer" length="0" decimal="0" jt="4" />
+			<column name="track_id" type="integer" length="0" decimal="0" jt="4" />
+			<column name="unit_price" type="decimal" jt="3" />
+			<column name="quantity" type="integer" length="0" decimal="0" jt="4" />
+			<index name="Pk_xxx_invoice_id_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+		</table>
+		<table name="xxx_media_type" >
+			<column name="ID" type="bigserial" jt="-5" mandatory="y" autoincrement="y" />
+			<column name="changed_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="action" type="char" length="1" decimal="0" jt="1" mandatory="y" />
+			<column name="record_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version_id" type="smallint" jt="5" mandatory="y" />
+			<column name="usr" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="app" type="integer" length="250" decimal="0" jt="4" />
+			<column name="name" type="varchar" length="40" decimal="0" jt="12" />
+			<column name="name_lower" type="varchar" length="40" decimal="0" jt="12" />
+			<index name="Pk_xxx_media_type_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+		</table>
+		<table name="xxx_playlist" >
+			<column name="ID" type="bigserial" jt="-5" mandatory="y" autoincrement="y" />
+			<column name="changed_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="action" type="char" length="1" decimal="0" jt="1" mandatory="y" />
+			<column name="record_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version_id" type="smallint" jt="5" mandatory="y" />
+			<column name="usr" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="app" type="integer" length="250" decimal="0" jt="4" />
+			<column name="name" type="varchar" length="40" decimal="0" jt="12" />
+			<column name="name_lower" type="varchar" length="40" decimal="0" jt="12" />
+			<index name="Pk_xxx_play_list_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+		</table>
+		<table name="xxx_playlist_track" >
+			<column name="ID" type="bigserial" jt="-5" mandatory="y" autoincrement="y" />
+			<column name="changed_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="action" type="char" length="1" decimal="0" jt="1" mandatory="y" />
+			<column name="record_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version_id" type="smallint" jt="5" mandatory="y" />
+			<column name="usr" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="app" type="integer" length="250" decimal="0" jt="4" />
+			<column name="playlist_id" type="integer" length="0" decimal="0" jt="4" />
+			<column name="track_id" type="integer" length="0" decimal="0" jt="4" />
+			<index name="Pk_xxx_playlist_track_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+		</table>
+		<table name="xxx_track" >
+			<column name="ID" type="bigserial" jt="-5" mandatory="y" autoincrement="y" />
+			<column name="changed_at" type="timestamp" length="0" decimal="0" jt="93" mandatory="y" >
+				<defo>CURRENT_TIMESTAMP</defo>
+			</column>
+			<column name="action" type="char" length="1" decimal="0" jt="1" mandatory="y" />
+			<column name="record_id" type="integer" length="0" decimal="0" jt="4" mandatory="y" />
+			<column name="version_id" type="smallint" jt="5" mandatory="y" />
+			<column name="usr" type="varchar" length="30" decimal="0" jt="12" />
+			<column name="app" type="integer" length="250" decimal="0" jt="4" />
+			<column name="name" type="varchar" length="150" decimal="0" jt="12" />
+			<column name="composers" type="varchar" length="200" decimal="0" jt="12" />
+			<column name="milliseconds" type="integer" length="0" decimal="0" jt="4" />
+			<column name="bytes" type="integer" length="0" decimal="0" jt="4" />
+			<column name="unit_price" type="decimal" jt="3" />
+			<column name="album_id" type="integer" length="0" decimal="0" jt="4" />
+			<column name="media_type_id" type="integer" length="0" decimal="0" jt="4" />
+			<column name="genre_id" type="integer" length="0" decimal="0" jt="4" />
+			<index name="Pk_xxx_track_ID" unique="PRIMARY_KEY" >
+				<column name="ID" />
+			</index>
+		</table>
+	</schema>
+	<layout name="Audit" id="Layout_2473840" show_column_type="y" show_relation="cascade" >
+		<entity schema="Default" name="xxx_playlist" color="003300" x="48" y="96" />
+		<entity schema="Default" name="xxx_playlist_track" color="003300" x="304" y="96" />
+		<entity schema="Default" name="xxx_track" color="003300" x="560" y="80" />
+		<entity schema="Default" name="xxx_application" color="003300" x="816" y="160" />
+		<entity schema="Default" name="xxx_media_type" color="003300" x="48" y="448" />
+		<entity schema="Default" name="xxx_invoice" color="003300" x="304" y="352" />
+		<entity schema="Default" name="xxx_album" color="003300" x="560" y="432" />
+		<entity schema="Default" name="xxx_artist" color="003300" x="816" y="432" />
+		<entity schema="Default" name="xxx_invoice_item" color="003300" x="48" y="704" />
+		<entity schema="Default" name="xxx_genre" color="003300" x="304" y="704" />
+		<entity schema="Default" name="xxx_employee" color="003300" x="560" y="704" />
+		<entity schema="Default" name="xxx_customer" color="003300" x="816" y="704" />
+		<group name="Audit" color="330033" >
+			<entity schema="Default" name="xxx_album" />
+			<entity schema="Default" name="xxx_artist" />
+			<entity schema="Default" name="xxx_customer" />
+			<entity schema="Default" name="xxx_employee" />
+			<entity schema="Default" name="xxx_genre" />
+			<entity schema="Default" name="xxx_invoice" />
+			<entity schema="Default" name="xxx_invoice_item" />
+			<entity schema="Default" name="xxx_media_type" />
+			<entity schema="Default" name="xxx_playlist" />
+			<entity schema="Default" name="xxx_playlist_track" />
+			<entity schema="Default" name="xxx_track" />
+			<entity schema="Default" name="xxx_application" />
+		</group>
+	</layout>
+	<layout name="Main" id="Layout_25eab2a" show_column_type="y" show_relation="cascade" >
+		<entity schema="Default" name="media_type" color="003300" x="48" y="112" />
+		<entity schema="Default" name="playlist_track" color="003300" x="64" y="368" />
+		<entity schema="Default" name="playlist" color="003300" x="48" y="608" />
+		<entity schema="Default" name="track" color="003300" x="304" y="96" />
+		<entity schema="Default" name="album" color="003300" x="288" y="480" />
+		<entity schema="Default" name="artist" color="003300" x="288" y="720" />
+		<entity schema="Default" name="employee" color="003300" x="544" y="320" />
+		<entity schema="Default" name="customer" color="003300" x="784" y="320" />
+		<entity schema="Default" name="invoice" color="003300" x="1024" y="320" />
+		<entity schema="Default" name="invoice_item" color="003300" x="912" y="80" />
+		<entity schema="Default" name="genre" color="003300" x="576" y="96" />
+		<group name="Business" color="99B3FF" >
+			<entity schema="Default" name="album" />
+			<entity schema="Default" name="artist" />
+			<entity schema="Default" name="customer" />
+			<entity schema="Default" name="employee" />
+			<entity schema="Default" name="genre" />
+			<entity schema="Default" name="invoice" />
+			<entity schema="Default" name="invoice_item" />
+			<entity schema="Default" name="media_type" />
+			<entity schema="Default" name="playlist" />
+			<entity schema="Default" name="playlist_track" />
+			<entity schema="Default" name="track" />
+		</group>
+	</layout>
+	<layout name="System" id="Layout_2437488" show_column_type="y" show_relation="cascade" >
+		<entity schema="Default" name="version" color="003300" x="48" y="96" />
+		<entity schema="Default" name="log" color="003300" x="272" y="96" />
+		<entity schema="Default" name="setup" color="003300" x="544" y="80" />
+		<entity schema="Default" name="activity_log" color="003300" x="64" y="304" />
+		<entity schema="Default" name="application" color="003300" x="304" y="336" />
+		<entity schema="Default" name="user_setup" color="003300" x="544" y="416" />
+		<group name="System" color="99B3FF" >
+			<entity schema="Default" name="setup" />
+			<entity schema="Default" name="version" />
+			<entity schema="Default" name="application" />
+			<entity schema="Default" name="user_setup" />
+			<entity schema="Default" name="activity_log" />
+			<entity schema="Default" name="log" />
+		</group>
+	</layout>
+</project>

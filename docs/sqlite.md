@@ -58,23 +58,3 @@ A storage class is more general than a datatype. The INTEGER storage class, for 
 ![](/Users/jdooley/Development/mistral/docs/img/sqlite-stretched-main.png)
 
 As the legacy model already covers the three most common types, this model has just been extended by adding blob fields to the customer and employee tables. And a discount rate has been added to the Customer table.
-
-### Files
-
-The following files have been used to define, document and script the creating of these databases.
-
-| File Name                                                                        | Description                                                                          |
-| -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| [sqlite-preferred.sql](/src/sqlite/preferred/sqlite-preferred.sql)               | Creates the Preferred database                                                       |
-| [sqlite-preferred-drop.sql](/src/sqlite/preferred/sqlite-preferred-drop.sql)     | Drops the Preferred database                                                         |
-| [sqlite-preferred-data-1.sql](/src/sqlite/preferred/sqlite-preferred-data-1.sql) | Demo data: Genre, Media Type, Employee and Customer                                  |
-| [sqlite-preferred-data-2.sql](/src/sqlite/preferred/sqlite-preferred-data-2.sql) | Demo data: Artist, Alubm and Tracks                                                  |
-| [sqlite-preferred-data-3.sql](/src/sqlite/preferred/sqlite-preferred-data-3.sql) | Demo data: Invoice and Invoice Item                                                  |
-| [sqlite-preferred-data-4.sql](/src/sqlite/preferred/sqlite-preferred-data-4.sql) | Demo data: Playlist and Playlist Track                                               |
-| [sqlite-preferred-data-5.sql](/src/sqlite/preferred/sqlite-preferred-data-5.sql) | Demo data: Application, Activity Log, Log, Setup, User Setup, Version and Audit data |
-| sqlite-legacy.dbs                                                                | Legacy database design for SQLite                                                    |
-| sqlite-legacy.sql                                                                | Creates the Legacy database                                                          |
-| sqlite-legacy-drop.sql                                                           | Drops the Legacy database                                                            |
-| sqlite-stretch.dbs                                                               | Database types design for SQLite                                                     |
-| sqlite-stretch.sql                                                               | Creates the stretch database                                                         |
-| sqlite-stretch-drop.sql                                                          | Drops the stretch database                                                           |
