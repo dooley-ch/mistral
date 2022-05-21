@@ -23,6 +23,7 @@ erDiagram
     
     activity_log {
         integer ID PK
+        text name
         text logged_at  
         text message
         integer activity_source_id FK
@@ -31,6 +32,7 @@ erDiagram
     
     activity_source {
         integer ID PK
+        text name
         integer lock_version
         created_at text
         updated_at text
@@ -116,6 +118,7 @@ erDiagram
     track {
         integer ID PK
         text name
+        text name_lower
         text composer
         integer milliseconds
         integer bytes
