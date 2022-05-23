@@ -1,0 +1,6 @@
+ID|name|name_lower
+1|MPEG audio file|mpeg audio file
+2|Protected AAC audio file|protected aac audio file
+3|Protected MPEG-4 video file|protected mpeg-4 video file
+4|Purchased AAC audio file|purchased aac audio file
+5|AAC audio file|aac audio file

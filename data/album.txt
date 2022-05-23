@@ -1,0 +1,348 @@
+ID|title|title_lower|artist_ID
+1|For Those About To Rock We Salute You|for those about to rock we salute you|1
+2|Balls to the Wall|balls to the wall|2
+3|Restless and Wild|restless and wild|2
+4|Let There Be Rock|let there be rock|1
+5|Big Ones|big ones|3
+6|Jagged Little Pill|jagged little pill|4
+7|Facelift|facelift|5
+8|Warner 25 Anos|warner 25 anos|6
+9|Plays Metallica By Four Cellos|plays metallica by four cellos|7
+10|Audioslave|audioslave|8
+11|Out Of Exile|out of exile|8
+12|BackBeat Soundtrack|backbeat soundtrack|9
+13|The Best Of Billy Cobham|the best of billy cobham|10
+14|Alcohol Fueled Brewtality Live! [Disc 1]|alcohol fueled brewtality live! [disc 1]|11
+15|Alcohol Fueled Brewtality Live! [Disc 2]|alcohol fueled brewtality live! [disc 2]|11
+16|Black Sabbath|black sabbath|12
+17|Black Sabbath Vol. 4 (Remaster)|black sabbath vol. 4 (remaster)|12
+18|Body Count|body count|13
+19|Chemical Wedding|chemical wedding|14
+20|The Best Of Buddy Guy - The Millenium Collection|the best of buddy guy - the millenium collection|15
+21|Prenda Minha|prenda minha|16
+22|Sozinho Remix Ao Vivo|sozinho remix ao vivo|16
+23|Minha Historia|minha historia|17
+24|Afrociberdelia|afrociberdelia|18
+25|Da Lama Ao Caos|da lama ao caos|18
+26|Acústico MTV [Live]|acústico mtv [live]|19
+27|Cidade Negra - Hits|cidade negra - hits|19
+28|Na Pista|na pista|20
+29|Axé Bahia 2001|axé bahia 2001|21
+30|BBC Sessions [Disc 1] [Live]|bbc sessions [disc 1] [live]|22
+31|Bongo Fury|bongo fury|23
+32|Carnaval 2001|carnaval 2001|21
+33|Chill: Brazil (Disc 1)|chill: brazil (disc 1)|24
+34|Chill: Brazil (Disc 2)|chill: brazil (disc 2)|6
+35|Garage Inc. (Disc 1)|garage inc. (disc 1)|50
+36|Greatest Hits II|greatest hits ii|51
+37|Greatest Kiss|greatest kiss|52
+38|Heart of the Night|heart of the night|53
+39|International Superhits|international superhits|54
+40|Into The Light|into the light|55
+41|Meus Momentos|meus momentos|56
+42|Minha História|minha história|57
+43|MK III The Final Concerts [Disc 1]|mk iii the final concerts [disc 1]|58
+44|Physical Graffiti [Disc 1]|physical graffiti [disc 1]|22
+45|Sambas De Enredo 2001|sambas de enredo 2001|21
+46|Supernatural|supernatural|59
+47|The Best of Ed Motta|the best of ed motta|37
+48|The Essential Miles Davis [Disc 1]|the essential miles davis [disc 1]|68
+49|The Essential Miles Davis [Disc 2]|the essential miles davis [disc 2]|68
+50|The Final Concerts (Disc 2)|the final concerts (disc 2)|58
+51|Up An' Atom|up an' atom|69
+52|Vinícius De Moraes - Sem Limite|vinícius de moraes - sem limite|70
+53|Vozes do MPB|vozes do mpb|21
+54|Chronicle, Vol. 1|chronicle, vol. 1|76
+55|Chronicle, Vol. 2|chronicle, vol. 2|76
+56|Cássia Eller - Coleção Sem Limite [Disc 2]|cássia eller - coleção sem limite [disc 2]|77
+57|Cássia Eller - Sem Limite [Disc 1]|cássia eller - sem limite [disc 1]|77
+58|Come Taste The Band|come taste the band|58
+59|Deep Purple In Rock|deep purple in rock|58
+60|Fireball|fireball|58
+61|Knocking at Your Back Door: The Best Of Deep Purple in the 80's|knocking at your back door: the best of deep purple in the 80's|58
+62|Machine Head|machine head|58
+63|Purpendicular|purpendicular|58
+64|Slaves And Masters|slaves and masters|58
+65|Stormbringer|stormbringer|58
+66|The Battle Rages On|the battle rages on|58
+67|Vault: Def Leppard's Greatest Hits|vault: def leppard's greatest hits|78
+68|Outbreak|outbreak|79
+69|Djavan Ao Vivo - Vol. 02|djavan ao vivo - vol. 02|80
+70|Djavan Ao Vivo - Vol. 1|djavan ao vivo - vol. 1|80
+71|Elis Regina-Minha História|elis regina-minha história|41
+72|The Cream Of Clapton|the cream of clapton|81
+73|Unplugged|unplugged|81
+74|album Of The Year|album of the year|82
+75|Angel Dust|angel dust|82
+76|King For A Day Fool For A Lifetime|king for a day fool for a lifetime|82
+77|The Real Thing|the real thing|82
+78|Deixa Entrar|deixa entrar|83
+79|In Your Honor [Disc 1]|in your honor [disc 1]|84
+80|In Your Honor [Disc 2]|in your honor [disc 2]|84
+81|One By One|one by one|84
+82|The Colour And The Shape|the colour and the shape|84
+83|My Way: The Best Of Frank Sinatra [Disc 1]|my way: the best of frank sinatra [disc 1]|85
+84|Roda De Funk|roda de funk|86
+85|As Canções de Eu Tu Eles|as canções de eu tu eles|27
+86|Quanta Gente Veio Ver (Live)|quanta gente veio ver (live)|27
+87|Quanta Gente Veio ver--Bônus De Carnaval|quanta gente veio ver--bônus de carnaval|27
+88|Faceless|faceless|87
+89|American Idiot|american idiot|54
+90|Appetite for Destruction|appetite for destruction|88
+91|Use Your Illusion I|use your illusion i|88
+92|Use Your Illusion II|use your illusion ii|88
+93|Blue Moods|blue moods|89
+94|A Matter of Life and Death|a matter of life and death|90
+95|A Real Dead One|a real dead one|90
+96|A Real Live One|a real live one|90
+97|Brave New World|brave new world|90
+98|Dance Of Death|dance of death|90
+99|Fear Of The Dark|fear of the dark|90
+100|Iron Maiden|iron maiden|90
+101|Killers|killers|90
+102|Live After Death|live after death|90
+103|Live At Donington 1992 (Disc 1)|live at donington 1992 (disc 1)|90
+104|Live At Donington 1992 (Disc 2)|live at donington 1992 (disc 2)|90
+105|No Prayer For The Dying|no prayer for the dying|90
+106|Piece Of Mind|piece of mind|90
+107|Powerslave|powerslave|90
+108|Rock In Rio [CD1]|rock in rio [cd1]|90
+109|Rock In Rio [CD2]|rock in rio [cd2]|90
+110|Seventh Son of a Seventh Son|seventh son of a seventh son|90
+111|Somewhere in Time|somewhere in time|90
+112|The Number of The Beast|the number of the beast|90
+113|The X Factor|the x factor|90
+114|Virtual XI|virtual xi|90
+115|Sex Machine|sex machine|91
+116|Emergency On Planet Earth|emergency on planet earth|92
+117|Synkronized|synkronized|92
+118|The Return Of The Space Cowboy|the return of the space cowboy|92
+119|Get Born|get born|93
+120|Are You Experienced?|are you experienced?|94
+121|Surfing with the Alien (Remastered)|surfing with the alien (remastered)|95
+122|Jorge Ben Jor 25 Anos|jorge ben jor 25 anos|46
+123|Jota Quest-1995|jota quest-1995|96
+124|Cafezinho|cafezinho|97
+125|Living After Midnight|living after midnight|98
+126|Unplugged [Live]|unplugged [live]|52
+127|BBC Sessions [Disc 2] [Live]|bbc sessions [disc 2] [live]|22
+128|Coda|coda|22
+129|Houses Of The Holy|houses of the holy|22
+130|In Through The Out Door|in through the out door|22
+131|IV|iv|22
+132|Led Zeppelin I|led zeppelin i|22
+133|Led Zeppelin II|led zeppelin ii|22
+134|Led Zeppelin III|led zeppelin iii|22
+135|Physical Graffiti [Disc 2]|physical graffiti [disc 2]|22
+136|Presence|presence|22
+137|The Song Remains The Same (Disc 1)|the song remains the same (disc 1)|22
+138|The Song Remains The Same (Disc 2)|the song remains the same (disc 2)|22
+139|A TempestadeTempestade Ou O Livro Dos Dias|a tempestadetempestade ou o livro dos dias|99
+140|Mais Do Mesmo|mais do mesmo|99
+141|Greatest Hits|greatest hits|100
+142|Lulu Santos - RCA 100 Anos De Música - Álbum 01|lulu santos - rca 100 anos de música - Álbum 01|101
+143|Lulu Santos - RCA 100 Anos De Música - Álbum 02|lulu santos - rca 100 anos de música - Álbum 02|101
+144|Misplaced Childhood|misplaced childhood|102
+145|Barulhinho Bom|barulhinho bom|103
+146|Seek And Shall Find: More Of The Best (1963-1981)|seek and shall find: more of the best (1963-1981)|104
+147|The Best Of Men At Work|the best of men at work|105
+148|Black album|black album|50
+149|Garage Inc. (Disc 2)|garage inc. (disc 2)|50
+150|Kill 'Em All|kill 'em all|50
+151|Load|load|50
+152|Master Of Puppets|master of puppets|50
+153|ReLoad|reload|50
+154|Ride The Lightning|ride the lightning|50
+155|St. Anger|st. anger|50
+156|...And Justice For All|...and justice for all|50
+157|Miles Ahead|miles ahead|68
+158|Milton Nascimento Ao Vivo|milton nascimento ao vivo|42
+159|Minas|minas|42
+160|Ace Of Spades|ace of spades|106
+161|Demorou...|demorou...|108
+162|Motley Crue Greatest Hits|motley crue greatest hits|109
+163|From The Muddy Banks Of The Wishkah [Live]|from the muddy banks of the wishkah [live]|110
+164|Nevermind|nevermind|110
+165|Compositores|compositores|111
+166|Olodum|olodum|112
+167|Acústico MTV|acústico mtv|113
+168|Arquivo II|arquivo ii|113
+169|Arquivo Os Paralamas Do Sucesso|arquivo os paralamas do sucesso|113
+170|Bark at the Moon (Remastered)|bark at the moon (remastered)|114
+171|Blizzard of Ozz|blizzard of ozz|114
+172|Diary of a Madman (Remastered)|diary of a madman (remastered)|114
+173|No More Tears (Remastered)|no more tears (remastered)|114
+174|Tribute|tribute|114
+175|Walking Into Clarksdale|walking into clarksdale|115
+176|Original Soundtracks 1|original soundtracks 1|116
+177|The Beast Live|the beast live|117
+178|Live On Two Legs [Live]|live on two legs [live]|118
+179|Pearl Jam|pearl jam|118
+180|Riot Act|riot act|118
+181|Ten|ten|118
+182|Vs.|vs.|118
+183|Dark Side Of The Moon|dark side of the moon|120
+184|Os Cães Ladram Mas A Caravana Não Pára|os cães ladram mas a caravana não pára|121
+185|Greatest Hits I|greatest hits i|51
+186|News Of The World|news of the world|51
+187|Out Of Time|out of time|122
+188|Green|green|124
+189|New Adventures In Hi-Fi|new adventures in hi-fi|124
+190|The Best Of R.E.M.: The IRS Years|the best of r.e.m.: the irs years|124
+191|Cesta Básica|cesta básica|125
+192|Raul Seixas|raul seixas|126
+193|Blood Sugar Sex Magik|blood sugar sex magik|127
+194|By The Way|by the way|127
+195|Californication|californication|127
+196|Retrospective I (1974-1980)|retrospective i (1974-1980)|128
+197|Santana - As Years Go By|santana - as years go by|59
+198|Santana Live|santana live|59
+199|Maquinarama|maquinarama|130
+200|O Samba Poconé|o samba poconé|130
+201|Judas 0: B-Sides and Rarities|judas 0: b-sides and rarities|131
+202|Rotten Apples: Greatest Hits|rotten apples: greatest hits|131
+203|A-Sides|a-sides|132
+204|Morning Dance|morning dance|53
+205|In Step|in step|133
+206|Core|core|134
+207|Mezmerize|mezmerize|135
+208|[1997] Black Light Syndrome|[1997] black light syndrome|136
+209|Live [Disc 1]|live [disc 1]|137
+210|Live [Disc 2]|live [disc 2]|137
+211|The Singles|the singles|138
+212|Beyond Good And Evil|beyond good and evil|139
+213|Pure Cult: The Best Of The Cult (For Rockers, Ravers, Lovers & Sinners) [UK]|pure cult: the best of the cult (for rockers, ravers, lovers & sinners) [uk]|139
+214|The Doors|the doors|140
+215|The Police Greatest Hits|the police greatest hits|141
+216|Hot Rocks, 1964-1971 (Disc 1)|hot rocks, 1964-1971 (disc 1)|142
+217|No Security|no security|142
+218|Voodoo Lounge|voodoo lounge|142
+219|Tangents|tangents|143
+220|Transmission|transmission|143
+221|My Generation - The Very Best Of The Who|my generation - the very best of the who|144
+222|Serie Sem Limite (Disc 1)|serie sem limite (disc 1)|145
+223|Serie Sem Limite (Disc 2)|serie sem limite (disc 2)|145
+224|Acústico|acústico|146
+225|Volume Dois|volume dois|146
+226|Battlestar Galactica: The Story So Far|battlestar galactica: the story so far|147
+227|Battlestar Galactica, Season 3|battlestar galactica, season 3|147
+228|Heroes, Season 1|heroes, season 1|148
+229|Lost, Season 3|lost, season 3|149
+230|Lost, Season 1|lost, season 1|149
+231|Lost, Season 2|lost, season 2|149
+232|Achtung Baby|achtung baby|150
+233|All That You Can't Leave Behind|all that you can't leave behind|150
+234|B-Sides 1980-1990|b-sides 1980-1990|150
+235|How To Dismantle An Atomic Bomb|how to dismantle an atomic bomb|150
+236|Pop|pop|150
+237|Rattle And Hum|rattle and hum|150
+238|The Best Of 1980-1990|the best of 1980-1990|150
+239|War|war|150
+240|Zooropa|zooropa|150
+241|UB40 The Best Of - Volume Two [UK]|ub40 the best of - volume two [uk]|151
+242|Diver Down|diver down|152
+243|The Best Of Van Halen, Vol. I|the best of van halen, vol. i|152
+244|Van Halen|van halen|152
+245|Van Halen III|van halen iii|152
+246|Contraband|contraband|153
+247|Vinicius De Moraes|vinicius de moraes|72
+248|Ao Vivo [IMPORT]|ao vivo [import]|155
+249|The Office, Season 1|the office, season 1|156
+250|The Office, Season 2|the office, season 2|156
+251|The Office, Season 3|the office, season 3|156
+252|Un-Led-Ed|un-led-ed|157
+253|Battlestar Galactica (Classic), Season 1|battlestar galactica (classic), season 1|158
+254|Aquaman|aquaman|159
+255|Instant Karma: The Amnesty International Campaign to Save Darfur|instant karma: the amnesty international campaign to save darfur|150
+256|Speak of the Devil|speak of the devil|114
+257|20th Century Masters - The Millennium Collection: The Best of Scorpions|20th century masters - the millennium collection: the best of scorpions|179
+258|House of Pain|house of pain|180
+259|Radio Brasil (O Som da Jovem Vanguarda) - Seleccao de Henrique Amaro|radio brasil (o som da jovem vanguarda) - seleccao de henrique amaro|36
+260|Cake: B-Sides and Rarities|cake: b-sides and rarities|196
+261|LOST, Season 4|lost, season 4|149
+262|Quiet Songs|quiet songs|197
+263|Muso Ko|muso ko|198
+264|Realize|realize|199
+265|Every Kind of Light|every kind of light|200
+266|Duos II|duos ii|201
+267|Worlds|worlds|202
+268|The Best of Beethoven|the best of beethoven|203
+269|Temple of the Dog|temple of the dog|204
+270|Carry On|carry on|205
+271|Revelations|revelations|8
+272|Adorate Deum: Gregorian Chant from the Proper of the Mass|adorate deum: gregorian chant from the proper of the mass|206
+273|Allegri: Miserere|allegri: miserere|207
+274|Pachelbel: Canon & Gigue|pachelbel: canon & gigue|208
+275|Vivaldi: The Four Seasons|vivaldi: the four seasons|209
+276|Bach: Violin Concertos|bach: violin concertos|210
+277|Bach: Goldberg Variations|bach: goldberg variations|211
+278|Bach: The Cello Suites|bach: the cello suites|212
+279|Handel: The Messiah (Highlights)|handel: the messiah (highlights)|213
+280|The World of Classical Favourites|the world of classical favourites|214
+281|Sir Neville Marriner: A Celebration|sir neville marriner: a celebration|215
+282|Mozart: Wind Concertos|mozart: wind concertos|216
+283|Haydn: Symphonies 99 - 104|haydn: symphonies 99 - 104|217
+284|Beethoven: Symhonies Nos. 5 & 6|beethoven: symhonies nos. 5 & 6|218
+285|A Soprano Inspired|a soprano inspired|219
+286|Great Opera Choruses|great opera choruses|220
+287|Wagner: Favourite Overtures|wagner: favourite overtures|221
+288|Fauré: Requiem, Ravel: Pavane & Others|fauré: requiem, ravel: pavane & others|222
+289|Tchaikovsky: The Nutcracker|tchaikovsky: the nutcracker|223
+290|The Last Night of the Proms|the last night of the proms|224
+291|Puccini: Madama Butterfly - Highlights|puccini: madama butterfly - highlights|225
+292|Holst: The Planets, Op. 32 & Vaughan Williams: Fantasies|holst: the planets, op. 32 & vaughan williams: fantasies|226
+293|Pavarotti's Opera Made Easy|pavarotti's opera made easy|227
+294|Great Performances - Barber's Adagio and Other Romantic Favorites for Strings|great performances - barber's adagio and other romantic favorites for strings|228
+295|Carmina Burana|carmina burana|229
+296|A Copland Celebration, Vol. I|a copland celebration, vol. i|230
+297|Bach: Toccata & Fugue in D Minor|bach: toccata & fugue in d minor|231
+298|Prokofiev: Symphony No.1|prokofiev: symphony no.1|232
+299|Scheherazade|scheherazade|233
+300|Bach: The Brandenburg Concertos|bach: the brandenburg concertos|234
+301|Chopin: Piano Concertos Nos. 1 & 2|chopin: piano concertos nos. 1 & 2|235
+302|Mascagni: Cavalleria Rusticana|mascagni: cavalleria rusticana|236
+303|Sibelius: Finlandia|sibelius: finlandia|237
+304|Beethoven Piano Sonatas: Moonlight & Pastorale|beethoven piano sonatas: moonlight & pastorale|238
+305|Great Recordings of the Century - Mahler: Das Lied von der Erde|great recordings of the century - mahler: das lied von der erde|240
+306|Elgar: Cello Concerto & Vaughan Williams: Fantasias|elgar: cello concerto & vaughan williams: fantasias|241
+307|Adams, John: The Chairman Dances|adams, john: the chairman dances|242
+308|Tchaikovsky: 1812 Festival Overture, Op.49, Capriccio Italien & Beethoven: Wellington's Victory|tchaikovsky: 1812 festival overture, op.49, capriccio italien & beethoven: wellington's victory|243
+309|Palestrina: Missa Papae Marcelli & Allegri: Miserere|palestrina: missa papae marcelli & allegri: miserere|244
+310|Prokofiev: Romeo & Juliet|prokofiev: romeo & juliet|245
+311|Strauss: Waltzes|strauss: waltzes|226
+312|Berlioz: Symphonie Fantastique|berlioz: symphonie fantastique|245
+313|Bizet: Carmen Highlights|bizet: carmen highlights|246
+314|English Renaissance|english renaissance|247
+315|Handel: Music for the Royal Fireworks (Original Version 1749)|handel: music for the royal fireworks (original version 1749)|208
+316|Grieg: Peer Gynt Suites & Sibelius: Pelléas et Mélisande|grieg: peer gynt suites & sibelius: pelléas et mélisande|248
+317|Mozart Gala: Famous Arias|mozart gala: famous arias|249
+318|SCRIABIN: Vers la flamme|scriabin: vers la flamme|250
+319|Armada: Music from the Courts of England and Spain|armada: music from the courts of england and spain|251
+320|Mozart: Symphonies Nos. 40 & 41|mozart: symphonies nos. 40 & 41|248
+321|Back to Black|back to black|252
+322|Frank|frank|252
+323|Carried to Dust (Bonus track Version)|carried to dust (bonus track version)|253
+324|Beethoven: Symphony No. 6 'Pastoral' Etc.|beethoven: symphony no. 6 'pastoral' etc.|254
+325|Bartok: Violin & Viola Concertos|bartok: violin & viola concertos|255
+326|Mendelssohn: A Midsummer Night's Dream|mendelssohn: a midsummer night's dream|256
+327|Bach: Orchestral Suites Nos. 1 - 4|bach: orchestral suites nos. 1 - 4|257
+328|Charpentier: Divertissements, Airs & Concerts|charpentier: divertissements, airs & concerts|258
+329|South American Getaway|south american getaway|259
+330|Górecki: Symphony No. 3|górecki: symphony no. 3|260
+331|Purcell: The Fairy Queen|purcell: the fairy queen|261
+332|The Ultimate Relexation album|the ultimate relexation album|262
+333|Purcell: Music for the Queen Mary|purcell: music for the queen mary|263
+334|Weill: The Seven Deadly Sins|weill: the seven deadly sins|264
+335|J.S. Bach: Chaconne, Suite in E Minor, Partita in E Major & Prelude, Fugue and Allegro|j.s. bach: chaconne, suite in e minor, partita in e major & prelude, fugue and allegro|265
+336|Prokofiev: Symphony No.5 & Stravinksy: Le Sacre Du Printemps|prokofiev: symphony no.5 & stravinksy: le sacre du printemps|248
+337|Szymanowski: Piano Works, Vol. 1|szymanowski: piano works, vol. 1|266
+338|Nielsen: The Six Symphonies|nielsen: the six symphonies|267
+339|Great Recordings of the Century: Paganini's 24 Caprices|great recordings of the century: paganini's 24 caprices|268
+340|Liszt - 12 Études D'Execution Transcendante|liszt - 12 Études d'execution transcendante|269
+341|Great Recordings of the Century - Shubert: Schwanengesang, 4 Lieder|great recordings of the century - shubert: schwanengesang, 4 lieder|270
+342|Locatelli: Concertos for Violin, Strings and Continuo, Vol. 3|locatelli: concertos for violin, strings and continuo, vol. 3|271
+343|Respighi:Pines of Rome|respighi:pines of rome|226
+344|Schubert: The Late String Quartets & String Quintet (3 CD's)|schubert: the late string quartets & string quintet (3 cd's)|272
+345|Monteverdi: L'Orfeo|monteverdi: l'orfeo|273
+346|Mozart: Chamber Music|mozart: chamber music|274
+347|Koyaanisqatsi (Soundtrack from the Motion Picture)|koyaanisqatsi (soundtrack from the motion picture)|275

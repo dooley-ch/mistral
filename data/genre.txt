@@ -1,0 +1,26 @@
+ID|name|name_lower
+1|rock|rock
+2|jazz|jazz
+3|metal|metal
+4|alternative & punk|alternative & punk
+5|rock and roll|rock and roll
+6|blues|blues
+7|latin|latin
+8|reggae|reggae
+9|pop|pop
+10|soundtrack|soundtrack
+11|bossa nova|bossa nova
+12|easy listening|easy listening
+13|heavy metal|heavy metal
+14|r&b/soul|r&b/soul
+15|electronica/dance|electronica/dance
+16|world|world
+17|hip hop/rap|hip hop/rap
+18|science fiction|science fiction
+19|tv shows|tv shows
+20|sci fi & fantasy|sci fi & fantasy
+21|drama|drama
+22|comedy|comedy
+23|alternative|alternative
+24|classical|classical
+25|opera|opera

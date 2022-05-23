@@ -1,0 +1,413 @@
+ID|invoice_date|address|city|state|country|post_code|total|customer_ID
+1|2009-01-01 00:00:00|Theodor-Heuss-Straße 34|Stuttgart||Germany|70174|198|2
+2|2009-01-02 00:00:00|Ullevålsveien 14|Oslo||Norway|0171|396|4
+3|2009-01-03 00:00:00|Grétrystraat 63|Brussels||Belgium|1000|594|8
+4|2009-01-06 00:00:00|8210 111 ST NW|Edmonton|AB|Canada|T6G 2C7|891|14
+5|2009-01-11 00:00:00|69 Salem Street|Boston|MA|USA|2113|1386|23
+6|2009-01-19 00:00:00|Berger Straße 10|Frankfurt||Germany|60316|99|37
+7|2009-02-01 00:00:00|Barbarossastraße 19|Berlin||Germany|10779|198|38
+8|2009-02-01 00:00:00|8, Rue Hanovre|Paris||France|75002|198|40
+9|2009-02-02 00:00:00|9, Place Louis Barthou|Bordeaux||France|33000|396|42
+10|2009-02-03 00:00:00|3 Chatham Street|Dublin|Dublin|Ireland||594|46
+11|2009-02-06 00:00:00|202 Hoxton Street|London||United Kingdom|N1 5LH|891|52
+12|2009-02-11 00:00:00|Theodor-Heuss-Straße 34|Stuttgart||Germany|70174|1386|2
+13|2009-02-19 00:00:00|1600 Amphitheatre Parkway|Mountain View|CA|USA|94043-1351|99|16
+14|2009-03-04 00:00:00|1 Microsoft Way|Redmond|WA|USA|98052-8300|198|17
+15|2009-03-04 00:00:00|1 Infinite Loop|Cupertino|CA|USA|95014|198|19
+16|2009-03-05 00:00:00|801 W 4th Street|Reno|NV|USA|89503|396|21
+17|2009-03-06 00:00:00|319 N Frances Street|Madison|WI|USA|53703|594|25
+18|2009-03-09 00:00:00|194A Chain Lake Drive|Halifax|NS|Canada|B3S 1C5|891|31
+19|2009-03-14 00:00:00|8, Rue Hanovre|Paris||France|75002|1386|40
+20|2009-03-22 00:00:00|110 Raeburn Pl|Edinburgh||United Kingdom|EH4 1HH|99|54
+21|2009-04-04 00:00:00|421 Bourke Street|Sidney|NSW|Australia|2010|198|55
+22|2009-04-04 00:00:00|Calle Lira, 198|Santiago||Chile||198|57
+23|2009-04-05 00:00:00|3,Raj Bhavan Road|Bangalore||India|560001|396|59
+24|2009-04-06 00:00:00|Ullevålsveien 14|Oslo||Norway|0171|594|4
+25|2009-04-09 00:00:00|Rua Dr Falcão Filho, 155|São Paulo|SP|Brazil|01007-010|891|10
+26|2009-04-14 00:00:00|1 Infinite Loop|Cupertino|CA|USA|95014|1386|19
+27|2009-04-22 00:00:00|5112 48 Street|Yellowknife|NT|Canada|X1A 1N6|99|33
+28|2009-05-05 00:00:00|Rua da Assunção 53|Lisbon||Portugal||198|34
+29|2009-05-05 00:00:00|Tauentzienstraße 8|Berlin||Germany|10789|198|36
+30|2009-05-06 00:00:00|Barbarossastraße 19|Berlin||Germany|10779|396|38
+31|2009-05-07 00:00:00|9, Place Louis Barthou|Bordeaux||France|33000|594|42
+32|2009-05-10 00:00:00|Lijnbaansgracht 120bg|Amsterdam|VV|Netherlands|1016|891|48
+33|2009-05-15 00:00:00|Calle Lira, 198|Santiago||Chile||1386|57
+34|2009-05-23 00:00:00|Praça Pio X, 119|Rio de Janeiro|RJ|Brazil|20040-020|99|12
+35|2009-06-05 00:00:00|Qe 7 Bloco G|Brasília|DF|Brazil|71020-677|198|13
+36|2009-06-05 00:00:00|700 W Pender Street|Vancouver|BC|Canada|V6C 1G8|198|15
+37|2009-06-06 00:00:00|1 Microsoft Way|Redmond|WA|USA|98052-8300|396|17
+38|2009-06-07 00:00:00|801 W 4th Street|Reno|NV|USA|89503|594|21
+39|2009-06-10 00:00:00|1033 N Park Ave|Tucson|AZ|USA|85719|891|27
+40|2009-06-15 00:00:00|Tauentzienstraße 8|Berlin||Germany|10789|1386|36
+41|2009-06-23 00:00:00|C/ San Bernardo 85|Madrid||Spain|28015|99|50
+42|2009-07-06 00:00:00|Celsiusg 9|Stockholm||Sweden|11230|198|51
+43|2009-07-06 00:00:00|113 Lupus St|London||United Kingdom|SW1V 3EN|198|53
+44|2009-07-07 00:00:00|421 Bourke Street|Sidney|NSW|Australia|2010|396|55
+45|2009-07-08 00:00:00|3,Raj Bhavan Road|Bangalore||India|560001|594|59
+46|2009-07-11 00:00:00|Rilská 3174/6|Prague||Czech Republic|14300|891|6
+47|2009-07-16 00:00:00|700 W Pender Street|Vancouver|BC|Canada|V6C 1G8|1386|15
+48|2009-07-24 00:00:00|796 Dundas Street West|Toronto|ON|Canada|M6J 1V1|99|29
+49|2009-08-06 00:00:00|230 Elgin Street|Ottawa|ON|Canada|K2P 1L7|198|30
+50|2009-08-06 00:00:00|696 Osborne Street|Winnipeg|MB|Canada|R3L 2B9|198|32
+51|2009-08-07 00:00:00|Rua da Assunção 53|Lisbon||Portugal||396|34
+52|2009-08-08 00:00:00|Barbarossastraße 19|Berlin||Germany|10779|594|38
+53|2009-08-11 00:00:00|Porthaninkatu 9|Helsinki||Finland|00530|891|44
+54|2009-08-16 00:00:00|113 Lupus St|London||United Kingdom|SW1V 3EN|1386|53
+55|2009-08-24 00:00:00|Grétrystraat 63|Brussels||Belgium|1000|99|8
+56|2009-09-06 00:00:00|Sønder Boulevard 51|Copenhagen||Denmark|1720|198|9
+57|2009-09-06 00:00:00|Av Paulista, 2022|São Paulo|SP|Brazil|01310-200|198|11
+58|2009-09-07 00:00:00|Qe 7 Bloco G|Brasília|DF|Brazil|71020-677|396|13
+59|2009-09-08 00:00:00|1 Microsoft Way|Redmond|WA|USA|98052-8300|594|17
+60|2009-09-11 00:00:00|69 Salem Street|Boston|MA|USA|2113|891|23
+61|2009-09-16 00:00:00|696 Osborne Street|Winnipeg|MB|Canada|R3L 2B9|1386|32
+62|2009-09-24 00:00:00|3 Chatham Street|Dublin|Dublin|Ireland||99|46
+63|2009-10-07 00:00:00|Via Degli Scipioni, 43|Rome|RM|Italy|00192|198|47
+64|2009-10-07 00:00:00|Ordynacka 10|Warsaw||Poland|00-358|198|49
+65|2009-10-08 00:00:00|Celsiusg 9|Stockholm||Sweden|11230|396|51
+66|2009-10-09 00:00:00|421 Bourke Street|Sidney|NSW|Australia|2010|594|55
+67|2009-10-12 00:00:00|Theodor-Heuss-Straße 34|Stuttgart||Germany|70174|891|2
+68|2009-10-17 00:00:00|Av Paulista, 2022|São Paulo|SP|Brazil|01310-200|1386|11
+69|2009-10-25 00:00:00|319 N Frances Street|Madison|WI|USA|53703|99|25
+70|2009-11-07 00:00:00|2211 W Berry Street|Fort Worth|TX|USA|76110|198|26
+71|2009-11-07 00:00:00|302 S 700 E|Salt Lake City|UT|USA|84102|198|28
+72|2009-11-08 00:00:00|230 Elgin Street|Ottawa|ON|Canada|K2P 1L7|396|30
+73|2009-11-09 00:00:00|Rua da Assunção 53|Lisbon||Portugal||594|34
+74|2009-11-12 00:00:00|8, Rue Hanovre|Paris||France|75002|891|40
+75|2009-11-17 00:00:00|Ordynacka 10|Warsaw||Poland|00-358|1386|49
+76|2009-11-25 00:00:00|Ullevålsveien 14|Oslo||Norway|0171|99|4
+77|2009-12-08 00:00:00|Klanova 9/506|Prague||Czech Republic|14700|198|5
+78|2009-12-08 00:00:00|Rotenturmstraße 4, 1010 Innere Stadt|Vienne||Austria|1010|198|7
+79|2009-12-09 00:00:00|Sønder Boulevard 51|Copenhagen||Denmark|1720|396|9
+80|2009-12-10 00:00:00|Qe 7 Bloco G|Brasília|DF|Brazil|71020-677|594|13
+81|2009-12-13 00:00:00|1 Infinite Loop|Cupertino|CA|USA|95014|891|19
+82|2009-12-18 00:00:00|302 S 700 E|Salt Lake City|UT|USA|84102|1386|28
+83|2009-12-26 00:00:00|9, Place Louis Barthou|Bordeaux||France|33000|99|42
+84|2010-01-08 00:00:00|68, Rue Jouvence|Dijon||France|21000|198|43
+85|2010-01-08 00:00:00|Erzsébet krt 58|Budapest||Hungary|H-1073|198|45
+86|2010-01-09 00:00:00|Via Degli Scipioni, 43|Rome|RM|Italy|00192|396|47
+87|2010-01-10 00:00:00|Celsiusg 9|Stockholm||Sweden|11230|694|51
+88|2010-01-13 00:00:00|Calle Lira, 198|Santiago||Chile||1791|57
+89|2010-01-18 00:00:00|Rotenturmstraße 4, 1010 Innere Stadt|Vienne||Austria|1010|1886|7
+90|2010-01-26 00:00:00|801 W 4th Street|Reno|NV|USA|89503|99|21
+91|2010-02-08 00:00:00|120 S Orange Ave|Orlando|FL|USA|32801|198|22
+92|2010-02-08 00:00:00|162 E Superior Street|Chicago|IL|USA|60611|198|24
+93|2010-02-09 00:00:00|2211 W Berry Street|Fort Worth|TX|USA|76110|396|26
+94|2010-02-10 00:00:00|230 Elgin Street|Ottawa|ON|Canada|K2P 1L7|594|30
+95|2010-02-13 00:00:00|Tauentzienstraße 8|Berlin||Germany|10789|891|36
+96|2010-02-18 00:00:00|Erzsébet krt 58|Budapest||Hungary|H-1073|2186|45
+97|2010-02-26 00:00:00|3,Raj Bhavan Road|Bangalore||India|560001|199|59
+98|2010-03-11 00:00:00|Av Brigadeiro Faria Lima, 2170|São José dos Campos|SP|Brazil|12227-000|398|1
+99|2010-03-11 00:00:00|1498 rue Bélanger|Montréal|QC|Canada|H2G 1A7|398|3
+100|2010-03-12 00:00:00|Klanova 9/506|Prague||Czech Republic|14700|396|5
+101|2010-03-13 00:00:00|Sønder Boulevard 51|Copenhagen||Denmark|1720|594|9
+102|2010-03-16 00:00:00|700 W Pender Street|Vancouver|BC|Canada|V6C 1G8|991|15
+103|2010-03-21 00:00:00|162 E Superior Street|Chicago|IL|USA|60611|1586|24
+104|2010-03-29 00:00:00|Barbarossastraße 19|Berlin||Germany|10779|99|38
+105|2010-04-11 00:00:00|4, Rue Milton|Paris||France|75009|198|39
+106|2010-04-11 00:00:00|11, Place Bellecour|Lyon||France|69002|198|41
+107|2010-04-12 00:00:00|68, Rue Jouvence|Dijon||France|21000|396|43
+108|2010-04-13 00:00:00|Via Degli Scipioni, 43|Rome|RM|Italy|00192|594|47
+109|2010-04-16 00:00:00|113 Lupus St|London||United Kingdom|SW1V 3EN|891|53
+110|2010-04-21 00:00:00|1498 rue Bélanger|Montréal|QC|Canada|H2G 1A7|1386|3
+111|2010-04-29 00:00:00|1 Microsoft Way|Redmond|WA|USA|98052-8300|99|17
+112|2010-05-12 00:00:00|627 Broadway|New York|NY|USA|10012-2612|198|18
+113|2010-05-12 00:00:00|541 Del Medio Avenue|Mountain View|CA|USA|94040-111|198|20
+114|2010-05-13 00:00:00|120 S Orange Ave|Orlando|FL|USA|32801|396|22
+115|2010-05-14 00:00:00|2211 W Berry Street|Fort Worth|TX|USA|76110|594|26
+116|2010-05-17 00:00:00|696 Osborne Street|Winnipeg|MB|Canada|R3L 2B9|891|32
+117|2010-05-22 00:00:00|11, Place Bellecour|Lyon||France|69002|1386|41
+118|2010-05-30 00:00:00|421 Bourke Street|Sidney|NSW|Australia|2010|99|55
+119|2010-06-12 00:00:00|307 Macacha Güemes|Buenos Aires||Argentina|1106|198|56
+120|2010-06-12 00:00:00|12,Community Centre|Delhi||India|110017|198|58
+121|2010-06-13 00:00:00|Av Brigadeiro Faria Lima, 2170|São José dos Campos|SP|Brazil|12227-000|396|1
+122|2010-06-14 00:00:00|Klanova 9/506|Prague||Czech Republic|14700|594|5
+123|2010-06-17 00:00:00|Av Paulista, 2022|São Paulo|SP|Brazil|01310-200|891|11
+124|2010-06-22 00:00:00|541 Del Medio Avenue|Mountain View|CA|USA|94040-111|1386|20
+125|2010-06-30 00:00:00|Rua da Assunção 53|Lisbon||Portugal||99|34
+126|2010-07-13 00:00:00|Rua dos Campeões Europeus de Viena, 4350|Porto||Portugal||198|35
+127|2010-07-13 00:00:00|Berger Straße 10|Frankfurt||Germany|60316|198|37
+128|2010-07-14 00:00:00|4, Rue Milton|Paris||France|75009|396|39
+129|2010-07-15 00:00:00|68, Rue Jouvence|Dijon||France|21000|594|43
+130|2010-07-18 00:00:00|Ordynacka 10|Warsaw||Poland|00-358|891|49
+131|2010-07-23 00:00:00|12,Community Centre|Delhi||India|110017|1386|58
+132|2010-07-31 00:00:00|Qe 7 Bloco G|Brasília|DF|Brazil|71020-677|99|13
+133|2010-08-13 00:00:00|8210 111 ST NW|Edmonton|AB|Canada|T6G 2C7|198|14
+134|2010-08-13 00:00:00|1600 Amphitheatre Parkway|Mountain View|CA|USA|94043-1351|198|16
+135|2010-08-14 00:00:00|627 Broadway|New York|NY|USA|10012-2612|396|18
+136|2010-08-15 00:00:00|120 S Orange Ave|Orlando|FL|USA|32801|594|22
+137|2010-08-18 00:00:00|302 S 700 E|Salt Lake City|UT|USA|84102|891|28
+138|2010-08-23 00:00:00|Berger Straße 10|Frankfurt||Germany|60316|1386|37
+139|2010-08-31 00:00:00|Celsiusg 9|Stockholm||Sweden|11230|99|51
+140|2010-09-13 00:00:00|202 Hoxton Street|London||United Kingdom|N1 5LH|198|52
+141|2010-09-13 00:00:00|110 Raeburn Pl|Edinburgh||United Kingdom|EH4 1HH|198|54
+142|2010-09-14 00:00:00|307 Macacha Güemes|Buenos Aires||Argentina|1106|396|56
+143|2010-09-15 00:00:00|Av Brigadeiro Faria Lima, 2170|São José dos Campos|SP|Brazil|12227-000|594|1
+144|2010-09-18 00:00:00|Rotenturmstraße 4, 1010 Innere Stadt|Vienne||Austria|1010|891|7
+145|2010-09-23 00:00:00|1600 Amphitheatre Parkway|Mountain View|CA|USA|94043-1351|1386|16
+146|2010-10-01 00:00:00|230 Elgin Street|Ottawa|ON|Canada|K2P 1L7|99|30
+147|2010-10-14 00:00:00|194A Chain Lake Drive|Halifax|NS|Canada|B3S 1C5|198|31
+148|2010-10-14 00:00:00|5112 48 Street|Yellowknife|NT|Canada|X1A 1N6|198|33
+149|2010-10-15 00:00:00|Rua dos Campeões Europeus de Viena, 4350|Porto||Portugal||396|35
+150|2010-10-16 00:00:00|4, Rue Milton|Paris||France|75009|594|39
+151|2010-10-19 00:00:00|Erzsébet krt 58|Budapest||Hungary|H-1073|891|45
+152|2010-10-24 00:00:00|110 Raeburn Pl|Edinburgh||United Kingdom|EH4 1HH|1386|54
+153|2010-11-01 00:00:00|Sønder Boulevard 51|Copenhagen||Denmark|1720|99|9
+154|2010-11-14 00:00:00|Rua Dr Falcão Filho, 155|São Paulo|SP|Brazil|01007-010|198|10
+155|2010-11-14 00:00:00|Praça Pio X, 119|Rio de Janeiro|RJ|Brazil|20040-020|198|12
+156|2010-11-15 00:00:00|8210 111 ST NW|Edmonton|AB|Canada|T6G 2C7|396|14
+157|2010-11-16 00:00:00|627 Broadway|New York|NY|USA|10012-2612|594|18
+158|2010-11-19 00:00:00|162 E Superior Street|Chicago|IL|USA|60611|891|24
+159|2010-11-24 00:00:00|5112 48 Street|Yellowknife|NT|Canada|X1A 1N6|1386|33
+160|2010-12-02 00:00:00|Via Degli Scipioni, 43|Rome|RM|Italy|00192|99|47
+161|2010-12-15 00:00:00|Lijnbaansgracht 120bg|Amsterdam|VV|Netherlands|1016|198|48
+162|2010-12-15 00:00:00|C/ San Bernardo 85|Madrid||Spain|28015|198|50
+163|2010-12-16 00:00:00|202 Hoxton Street|London||United Kingdom|N1 5LH|396|52
+164|2010-12-17 00:00:00|307 Macacha Güemes|Buenos Aires||Argentina|1106|594|56
+165|2010-12-20 00:00:00|1498 rue Bélanger|Montréal|QC|Canada|H2G 1A7|891|3
+166|2010-12-25 00:00:00|Praça Pio X, 119|Rio de Janeiro|RJ|Brazil|20040-020|1386|12
+167|2011-01-02 00:00:00|2211 W Berry Street|Fort Worth|TX|USA|76110|99|26
+168|2011-01-15 00:00:00|1033 N Park Ave|Tucson|AZ|USA|85719|198|27
+169|2011-01-15 00:00:00|796 Dundas Street West|Toronto|ON|Canada|M6J 1V1|198|29
+170|2011-01-16 00:00:00|194A Chain Lake Drive|Halifax|NS|Canada|B3S 1C5|396|31
+171|2011-01-17 00:00:00|Rua dos Campeões Europeus de Viena, 4350|Porto||Portugal||594|35
+172|2011-01-20 00:00:00|11, Place Bellecour|Lyon||France|69002|891|41
+173|2011-01-25 00:00:00|C/ San Bernardo 85|Madrid||Spain|28015|1386|50
+174|2011-02-02 00:00:00|Klanova 9/506|Prague||Czech Republic|14700|99|5
+175|2011-02-15 00:00:00|Rilská 3174/6|Prague||Czech Republic|14300|198|6
+176|2011-02-15 00:00:00|Grétrystraat 63|Brussels||Belgium|1000|198|8
+177|2011-02-16 00:00:00|Rua Dr Falcão Filho, 155|São Paulo|SP|Brazil|01007-010|396|10
+178|2011-02-17 00:00:00|8210 111 ST NW|Edmonton|AB|Canada|T6G 2C7|594|14
+179|2011-02-20 00:00:00|541 Del Medio Avenue|Mountain View|CA|USA|94040-111|891|20
+180|2011-02-25 00:00:00|796 Dundas Street West|Toronto|ON|Canada|M6J 1V1|1386|29
+181|2011-03-05 00:00:00|68, Rue Jouvence|Dijon||France|21000|99|43
+182|2011-03-18 00:00:00|Porthaninkatu 9|Helsinki||Finland|00530|198|44
+183|2011-03-18 00:00:00|3 Chatham Street|Dublin|Dublin|Ireland||198|46
+184|2011-03-19 00:00:00|Lijnbaansgracht 120bg|Amsterdam|VV|Netherlands|1016|396|48
+185|2011-03-20 00:00:00|202 Hoxton Street|London||United Kingdom|N1 5LH|594|52
+186|2011-03-23 00:00:00|12,Community Centre|Delhi||India|110017|891|58
+187|2011-03-28 00:00:00|Grétrystraat 63|Brussels||Belgium|1000|1386|8
+188|2011-04-05 00:00:00|120 S Orange Ave|Orlando|FL|USA|32801|99|22
+189|2011-04-18 00:00:00|69 Salem Street|Boston|MA|USA|2113|198|23
+190|2011-04-18 00:00:00|319 N Frances Street|Madison|WI|USA|53703|198|25
+191|2011-04-19 00:00:00|1033 N Park Ave|Tucson|AZ|USA|85719|396|27
+192|2011-04-20 00:00:00|194A Chain Lake Drive|Halifax|NS|Canada|B3S 1C5|594|31
+193|2011-04-23 00:00:00|Berger Straße 10|Frankfurt||Germany|60316|1491|37
+194|2011-04-28 00:00:00|3 Chatham Street|Dublin|Dublin|Ireland||2186|46
+195|2011-05-06 00:00:00|Av Brigadeiro Faria Lima, 2170|São José dos Campos|SP|Brazil|12227-000|99|1
+196|2011-05-19 00:00:00|Theodor-Heuss-Straße 34|Stuttgart||Germany|70174|198|2
+197|2011-05-19 00:00:00|Ullevålsveien 14|Oslo||Norway|0171|198|4
+198|2011-05-20 00:00:00|Rilská 3174/6|Prague||Czech Republic|14300|396|6
+199|2011-05-21 00:00:00|Rua Dr Falcão Filho, 155|São Paulo|SP|Brazil|01007-010|594|10
+200|2011-05-24 00:00:00|1600 Amphitheatre Parkway|Mountain View|CA|USA|94043-1351|891|16
+201|2011-05-29 00:00:00|319 N Frances Street|Madison|WI|USA|53703|1886|25
+202|2011-06-06 00:00:00|4, Rue Milton|Paris||France|75009|199|39
+203|2011-06-19 00:00:00|8, Rue Hanovre|Paris||France|75002|298|40
+204|2011-06-19 00:00:00|9, Place Louis Barthou|Bordeaux||France|33000|398|42
+205|2011-06-20 00:00:00|Porthaninkatu 9|Helsinki||Finland|00530|796|44
+206|2011-06-21 00:00:00|Lijnbaansgracht 120bg|Amsterdam|VV|Netherlands|1016|894|48
+207|2011-06-24 00:00:00|110 Raeburn Pl|Edinburgh||United Kingdom|EH4 1HH|891|54
+208|2011-06-29 00:00:00|Ullevålsveien 14|Oslo||Norway|0171|1586|4
+209|2011-07-07 00:00:00|627 Broadway|New York|NY|USA|10012-2612|99|18
+210|2011-07-20 00:00:00|1 Infinite Loop|Cupertino|CA|USA|95014|198|19
+211|2011-07-20 00:00:00|801 W 4th Street|Reno|NV|USA|89503|198|21
+212|2011-07-21 00:00:00|69 Salem Street|Boston|MA|USA|2113|396|23
+213|2011-07-22 00:00:00|1033 N Park Ave|Tucson|AZ|USA|85719|594|27
+214|2011-07-25 00:00:00|5112 48 Street|Yellowknife|NT|Canada|X1A 1N6|891|33
+215|2011-07-30 00:00:00|9, Place Louis Barthou|Bordeaux||France|33000|1386|42
+216|2011-08-07 00:00:00|307 Macacha Güemes|Buenos Aires||Argentina|1106|99|56
+217|2011-08-20 00:00:00|Calle Lira, 198|Santiago||Chile||198|57
+218|2011-08-20 00:00:00|3,Raj Bhavan Road|Bangalore||India|560001|198|59
+219|2011-08-21 00:00:00|Theodor-Heuss-Straße 34|Stuttgart||Germany|70174|396|2
+220|2011-08-22 00:00:00|Rilská 3174/6|Prague||Czech Republic|14300|594|6
+221|2011-08-25 00:00:00|Praça Pio X, 119|Rio de Janeiro|RJ|Brazil|20040-020|891|12
+222|2011-08-30 00:00:00|801 W 4th Street|Reno|NV|USA|89503|1386|21
+223|2011-09-07 00:00:00|Rua dos Campeões Europeus de Viena, 4350|Porto||Portugal||99|35
+224|2011-09-20 00:00:00|Tauentzienstraße 8|Berlin||Germany|10789|198|36
+225|2011-09-20 00:00:00|Barbarossastraße 19|Berlin||Germany|10779|198|38
+226|2011-09-21 00:00:00|8, Rue Hanovre|Paris||France|75002|396|40
+227|2011-09-22 00:00:00|Porthaninkatu 9|Helsinki||Finland|00530|594|44
+228|2011-09-25 00:00:00|C/ San Bernardo 85|Madrid||Spain|28015|891|50
+229|2011-09-30 00:00:00|3,Raj Bhavan Road|Bangalore||India|560001|1386|59
+230|2011-10-08 00:00:00|8210 111 ST NW|Edmonton|AB|Canada|T6G 2C7|99|14
+231|2011-10-21 00:00:00|700 W Pender Street|Vancouver|BC|Canada|V6C 1G8|198|15
+232|2011-10-21 00:00:00|1 Microsoft Way|Redmond|WA|USA|98052-8300|198|17
+233|2011-10-22 00:00:00|1 Infinite Loop|Cupertino|CA|USA|95014|396|19
+234|2011-10-23 00:00:00|69 Salem Street|Boston|MA|USA|2113|594|23
+235|2011-10-26 00:00:00|796 Dundas Street West|Toronto|ON|Canada|M6J 1V1|891|29
+236|2011-10-31 00:00:00|Barbarossastraße 19|Berlin||Germany|10779|1386|38
+237|2011-11-08 00:00:00|202 Hoxton Street|London||United Kingdom|N1 5LH|99|52
+238|2011-11-21 00:00:00|113 Lupus St|London||United Kingdom|SW1V 3EN|198|53
+239|2011-11-21 00:00:00|421 Bourke Street|Sidney|NSW|Australia|2010|198|55
+240|2011-11-22 00:00:00|Calle Lira, 198|Santiago||Chile||396|57
+241|2011-11-23 00:00:00|Theodor-Heuss-Straße 34|Stuttgart||Germany|70174|594|2
+242|2011-11-26 00:00:00|Grétrystraat 63|Brussels||Belgium|1000|891|8
+243|2011-12-01 00:00:00|1 Microsoft Way|Redmond|WA|USA|98052-8300|1386|17
+244|2011-12-09 00:00:00|194A Chain Lake Drive|Halifax|NS|Canada|B3S 1C5|99|31
+245|2011-12-22 00:00:00|696 Osborne Street|Winnipeg|MB|Canada|R3L 2B9|198|32
+246|2011-12-22 00:00:00|Rua da Assunção 53|Lisbon||Portugal||198|34
+247|2011-12-23 00:00:00|Tauentzienstraße 8|Berlin||Germany|10789|396|36
+248|2011-12-24 00:00:00|8, Rue Hanovre|Paris||France|75002|594|40
+249|2011-12-27 00:00:00|3 Chatham Street|Dublin|Dublin|Ireland||891|46
+250|2012-01-01 00:00:00|421 Bourke Street|Sidney|NSW|Australia|2010|1386|55
+251|2012-01-09 00:00:00|Rua Dr Falcão Filho, 155|São Paulo|SP|Brazil|01007-010|99|10
+252|2012-01-22 00:00:00|Av Paulista, 2022|São Paulo|SP|Brazil|01310-200|198|11
+253|2012-01-22 00:00:00|Qe 7 Bloco G|Brasília|DF|Brazil|71020-677|198|13
+254|2012-01-23 00:00:00|700 W Pender Street|Vancouver|BC|Canada|V6C 1G8|396|15
+255|2012-01-24 00:00:00|1 Infinite Loop|Cupertino|CA|USA|95014|594|19
+256|2012-01-27 00:00:00|319 N Frances Street|Madison|WI|USA|53703|891|25
+257|2012-02-01 00:00:00|Rua da Assunção 53|Lisbon||Portugal||1386|34
+258|2012-02-09 00:00:00|Lijnbaansgracht 120bg|Amsterdam|VV|Netherlands|1016|99|48
+259|2012-02-22 00:00:00|Ordynacka 10|Warsaw||Poland|00-358|198|49
+260|2012-02-22 00:00:00|Celsiusg 9|Stockholm||Sweden|11230|198|51
+261|2012-02-23 00:00:00|113 Lupus St|London||United Kingdom|SW1V 3EN|396|53
+262|2012-02-24 00:00:00|Calle Lira, 198|Santiago||Chile||594|57
+263|2012-02-27 00:00:00|Ullevålsveien 14|Oslo||Norway|0171|891|4
+264|2012-03-03 00:00:00|Qe 7 Bloco G|Brasília|DF|Brazil|71020-677|1386|13
+265|2012-03-11 00:00:00|1033 N Park Ave|Tucson|AZ|USA|85719|99|27
+266|2012-03-24 00:00:00|302 S 700 E|Salt Lake City|UT|USA|84102|198|28
+267|2012-03-24 00:00:00|230 Elgin Street|Ottawa|ON|Canada|K2P 1L7|198|30
+268|2012-03-25 00:00:00|696 Osborne Street|Winnipeg|MB|Canada|R3L 2B9|396|32
+269|2012-03-26 00:00:00|Tauentzienstraße 8|Berlin||Germany|10789|594|36
+270|2012-03-29 00:00:00|9, Place Louis Barthou|Bordeaux||France|33000|891|42
+271|2012-04-03 00:00:00|Celsiusg 9|Stockholm||Sweden|11230|1386|51
+272|2012-04-11 00:00:00|Rilská 3174/6|Prague||Czech Republic|14300|99|6
+273|2012-04-24 00:00:00|Rotenturmstraße 4, 1010 Innere Stadt|Vienne||Austria|1010|198|7
+274|2012-04-24 00:00:00|Sønder Boulevard 51|Copenhagen||Denmark|1720|198|9
+275|2012-04-25 00:00:00|Av Paulista, 2022|São Paulo|SP|Brazil|01310-200|396|11
+276|2012-04-26 00:00:00|700 W Pender Street|Vancouver|BC|Canada|V6C 1G8|594|15
+277|2012-04-29 00:00:00|801 W 4th Street|Reno|NV|USA|89503|891|21
+278|2012-05-04 00:00:00|230 Elgin Street|Ottawa|ON|Canada|K2P 1L7|1386|30
+279|2012-05-12 00:00:00|Porthaninkatu 9|Helsinki||Finland|00530|99|44
+280|2012-05-25 00:00:00|Erzsébet krt 58|Budapest||Hungary|H-1073|198|45
+281|2012-05-25 00:00:00|Via Degli Scipioni, 43|Rome|RM|Italy|00192|198|47
+282|2012-05-26 00:00:00|Ordynacka 10|Warsaw||Poland|00-358|396|49
+283|2012-05-27 00:00:00|113 Lupus St|London||United Kingdom|SW1V 3EN|594|53
+284|2012-05-30 00:00:00|3,Raj Bhavan Road|Bangalore||India|560001|891|59
+285|2012-06-04 00:00:00|Sønder Boulevard 51|Copenhagen||Denmark|1720|1386|9
+286|2012-06-12 00:00:00|69 Salem Street|Boston|MA|USA|2113|99|23
+287|2012-06-25 00:00:00|162 E Superior Street|Chicago|IL|USA|60611|198|24
+288|2012-06-25 00:00:00|2211 W Berry Street|Fort Worth|TX|USA|76110|198|26
+289|2012-06-26 00:00:00|302 S 700 E|Salt Lake City|UT|USA|84102|396|28
+290|2012-06-27 00:00:00|696 Osborne Street|Winnipeg|MB|Canada|R3L 2B9|594|32
+291|2012-06-30 00:00:00|Barbarossastraße 19|Berlin||Germany|10779|891|38
+292|2012-07-05 00:00:00|Via Degli Scipioni, 43|Rome|RM|Italy|00192|1386|47
+293|2012-07-13 00:00:00|Theodor-Heuss-Straße 34|Stuttgart||Germany|70174|99|2
+294|2012-07-26 00:00:00|1498 rue Bélanger|Montréal|QC|Canada|H2G 1A7|198|3
+295|2012-07-26 00:00:00|Klanova 9/506|Prague||Czech Republic|14700|198|5
+296|2012-07-27 00:00:00|Rotenturmstraße 4, 1010 Innere Stadt|Vienne||Austria|1010|396|7
+297|2012-07-28 00:00:00|Av Paulista, 2022|São Paulo|SP|Brazil|01310-200|594|11
+298|2012-07-31 00:00:00|1 Microsoft Way|Redmond|WA|USA|98052-8300|191|17
+299|2012-08-05 00:00:00|2211 W Berry Street|Fort Worth|TX|USA|76110|2386|26
+300|2012-08-13 00:00:00|8, Rue Hanovre|Paris||France|75002|99|40
+301|2012-08-26 00:00:00|11, Place Bellecour|Lyon||France|69002|198|41
+302|2012-08-26 00:00:00|68, Rue Jouvence|Dijon||France|21000|198|43
+303|2012-08-27 00:00:00|Erzsébet krt 58|Budapest||Hungary|H-1073|396|45
+304|2012-08-28 00:00:00|Ordynacka 10|Warsaw||Poland|00-358|594|49
+305|2012-08-31 00:00:00|421 Bourke Street|Sidney|NSW|Australia|2010|891|55
+306|2012-09-05 00:00:00|Klanova 9/506|Prague||Czech Republic|14700|1686|5
+307|2012-09-13 00:00:00|1 Infinite Loop|Cupertino|CA|USA|95014|199|19
+308|2012-09-26 00:00:00|541 Del Medio Avenue|Mountain View|CA|USA|94040-111|398|20
+309|2012-09-26 00:00:00|120 S Orange Ave|Orlando|FL|USA|32801|398|22
+310|2012-09-27 00:00:00|162 E Superior Street|Chicago|IL|USA|60611|796|24
+311|2012-09-28 00:00:00|302 S 700 E|Salt Lake City|UT|USA|84102|1194|28
+312|2012-10-01 00:00:00|Rua da Assunção 53|Lisbon||Portugal||191|34
+313|2012-10-06 00:00:00|68, Rue Jouvence|Dijon||France|21000|1686|43
+314|2012-10-14 00:00:00|Calle Lira, 198|Santiago||Chile||99|57
+315|2012-10-27 00:00:00|12,Community Centre|Delhi||India|110017|198|58
+316|2012-10-27 00:00:00|Av Brigadeiro Faria Lima, 2170|São José dos Campos|SP|Brazil|12227-000|198|1
+317|2012-10-28 00:00:00|1498 rue Bélanger|Montréal|QC|Canada|H2G 1A7|396|3
+318|2012-10-29 00:00:00|Rotenturmstraße 4, 1010 Innere Stadt|Vienne||Austria|1010|594|7
+319|2012-11-01 00:00:00|Qe 7 Bloco G|Brasília|DF|Brazil|71020-677|891|13
+320|2012-11-06 00:00:00|120 S Orange Ave|Orlando|FL|USA|32801|1386|22
+321|2012-11-14 00:00:00|Tauentzienstraße 8|Berlin||Germany|10789|99|36
+322|2012-11-27 00:00:00|Berger Straße 10|Frankfurt||Germany|60316|198|37
+323|2012-11-27 00:00:00|4, Rue Milton|Paris||France|75009|198|39
+324|2012-11-28 00:00:00|11, Place Bellecour|Lyon||France|69002|396|41
+325|2012-11-29 00:00:00|Erzsébet krt 58|Budapest||Hungary|H-1073|594|45
+326|2012-12-02 00:00:00|Celsiusg 9|Stockholm||Sweden|11230|891|51
+327|2012-12-07 00:00:00|Av Brigadeiro Faria Lima, 2170|São José dos Campos|SP|Brazil|12227-000|1386|1
+328|2012-12-15 00:00:00|700 W Pender Street|Vancouver|BC|Canada|V6C 1G8|99|15
+329|2012-12-28 00:00:00|1600 Amphitheatre Parkway|Mountain View|CA|USA|94043-1351|198|16
+330|2012-12-28 00:00:00|627 Broadway|New York|NY|USA|10012-2612|198|18
+331|2012-12-29 00:00:00|541 Del Medio Avenue|Mountain View|CA|USA|94040-111|396|20
+332|2012-12-30 00:00:00|162 E Superior Street|Chicago|IL|USA|60611|594|24
+333|2013-01-02 00:00:00|230 Elgin Street|Ottawa|ON|Canada|K2P 1L7|891|30
+334|2013-01-07 00:00:00|4, Rue Milton|Paris||France|75009|1386|39
+335|2013-01-15 00:00:00|113 Lupus St|London||United Kingdom|SW1V 3EN|99|53
+336|2013-01-28 00:00:00|110 Raeburn Pl|Edinburgh||United Kingdom|EH4 1HH|198|54
+337|2013-01-28 00:00:00|307 Macacha Güemes|Buenos Aires||Argentina|1106|198|56
+338|2013-01-29 00:00:00|12,Community Centre|Delhi||India|110017|396|58
+339|2013-01-30 00:00:00|1498 rue Bélanger|Montréal|QC|Canada|H2G 1A7|594|3
+340|2013-02-02 00:00:00|Sønder Boulevard 51|Copenhagen||Denmark|1720|891|9
+341|2013-02-07 00:00:00|627 Broadway|New York|NY|USA|10012-2612|1386|18
+342|2013-02-15 00:00:00|696 Osborne Street|Winnipeg|MB|Canada|R3L 2B9|99|32
+343|2013-02-28 00:00:00|5112 48 Street|Yellowknife|NT|Canada|X1A 1N6|198|33
+344|2013-02-28 00:00:00|Rua dos Campeões Europeus de Viena, 4350|Porto||Portugal||198|35
+345|2013-03-01 00:00:00|Berger Straße 10|Frankfurt||Germany|60316|396|37
+346|2013-03-02 00:00:00|11, Place Bellecour|Lyon||France|69002|594|41
+347|2013-03-05 00:00:00|Via Degli Scipioni, 43|Rome|RM|Italy|00192|891|47
+348|2013-03-10 00:00:00|307 Macacha Güemes|Buenos Aires||Argentina|1106|1386|56
+349|2013-03-18 00:00:00|Av Paulista, 2022|São Paulo|SP|Brazil|01310-200|99|11
+350|2013-03-31 00:00:00|Praça Pio X, 119|Rio de Janeiro|RJ|Brazil|20040-020|198|12
+351|2013-03-31 00:00:00|8210 111 ST NW|Edmonton|AB|Canada|T6G 2C7|198|14
+352|2013-04-01 00:00:00|1600 Amphitheatre Parkway|Mountain View|CA|USA|94043-1351|396|16
+353|2013-04-02 00:00:00|541 Del Medio Avenue|Mountain View|CA|USA|94040-111|594|20
+354|2013-04-05 00:00:00|2211 W Berry Street|Fort Worth|TX|USA|76110|891|26
+355|2013-04-10 00:00:00|Rua dos Campeões Europeus de Viena, 4350|Porto||Portugal||1386|35
+356|2013-04-18 00:00:00|Ordynacka 10|Warsaw||Poland|00-358|99|49
+357|2013-05-01 00:00:00|C/ San Bernardo 85|Madrid||Spain|28015|198|50
+358|2013-05-01 00:00:00|202 Hoxton Street|London||United Kingdom|N1 5LH|198|52
+359|2013-05-02 00:00:00|110 Raeburn Pl|Edinburgh||United Kingdom|EH4 1HH|396|54
+360|2013-05-03 00:00:00|12,Community Centre|Delhi||India|110017|594|58
+361|2013-05-06 00:00:00|Klanova 9/506|Prague||Czech Republic|14700|891|5
+362|2013-05-11 00:00:00|8210 111 ST NW|Edmonton|AB|Canada|T6G 2C7|1386|14
+363|2013-05-19 00:00:00|302 S 700 E|Salt Lake City|UT|USA|84102|99|28
+364|2013-06-01 00:00:00|796 Dundas Street West|Toronto|ON|Canada|M6J 1V1|198|29
+365|2013-06-01 00:00:00|194A Chain Lake Drive|Halifax|NS|Canada|B3S 1C5|198|31
+366|2013-06-02 00:00:00|5112 48 Street|Yellowknife|NT|Canada|X1A 1N6|396|33
+367|2013-06-03 00:00:00|Berger Straße 10|Frankfurt||Germany|60316|594|37
+368|2013-06-06 00:00:00|68, Rue Jouvence|Dijon||France|21000|891|43
+369|2013-06-11 00:00:00|202 Hoxton Street|London||United Kingdom|N1 5LH|1386|52
+370|2013-06-19 00:00:00|Rotenturmstraße 4, 1010 Innere Stadt|Vienne||Austria|1010|99|7
+371|2013-07-02 00:00:00|Grétrystraat 63|Brussels||Belgium|1000|198|8
+372|2013-07-02 00:00:00|Rua Dr Falcão Filho, 155|São Paulo|SP|Brazil|01007-010|198|10
+373|2013-07-03 00:00:00|Praça Pio X, 119|Rio de Janeiro|RJ|Brazil|20040-020|396|12
+374|2013-07-04 00:00:00|1600 Amphitheatre Parkway|Mountain View|CA|USA|94043-1351|594|16
+375|2013-07-07 00:00:00|120 S Orange Ave|Orlando|FL|USA|32801|891|22
+376|2013-07-12 00:00:00|194A Chain Lake Drive|Halifax|NS|Canada|B3S 1C5|1386|31
+377|2013-07-20 00:00:00|Erzsébet krt 58|Budapest||Hungary|H-1073|99|45
+378|2013-08-02 00:00:00|3 Chatham Street|Dublin|Dublin|Ireland||198|46
+379|2013-08-02 00:00:00|Lijnbaansgracht 120bg|Amsterdam|VV|Netherlands|1016|198|48
+380|2013-08-03 00:00:00|C/ San Bernardo 85|Madrid||Spain|28015|396|50
+381|2013-08-04 00:00:00|110 Raeburn Pl|Edinburgh||United Kingdom|EH4 1HH|594|54
+382|2013-08-07 00:00:00|Av Brigadeiro Faria Lima, 2170|São José dos Campos|SP|Brazil|12227-000|891|1
+383|2013-08-12 00:00:00|Rua Dr Falcão Filho, 155|São Paulo|SP|Brazil|01007-010|1386|10
+384|2013-08-20 00:00:00|162 E Superior Street|Chicago|IL|USA|60611|99|24
+385|2013-09-02 00:00:00|319 N Frances Street|Madison|WI|USA|53703|198|25
+386|2013-09-02 00:00:00|1033 N Park Ave|Tucson|AZ|USA|85719|198|27
+387|2013-09-03 00:00:00|796 Dundas Street West|Toronto|ON|Canada|M6J 1V1|396|29
+388|2013-09-04 00:00:00|5112 48 Street|Yellowknife|NT|Canada|X1A 1N6|594|33
+389|2013-09-07 00:00:00|4, Rue Milton|Paris||France|75009|891|39
+390|2013-09-12 00:00:00|Lijnbaansgracht 120bg|Amsterdam|VV|Netherlands|1016|1386|48
+391|2013-09-20 00:00:00|1498 rue Bélanger|Montréal|QC|Canada|H2G 1A7|99|3
+392|2013-10-03 00:00:00|Ullevålsveien 14|Oslo||Norway|0171|198|4
+393|2013-10-03 00:00:00|Rilská 3174/6|Prague||Czech Republic|14300|198|6
+394|2013-10-04 00:00:00|Grétrystraat 63|Brussels||Belgium|1000|396|8
+395|2013-10-05 00:00:00|Praça Pio X, 119|Rio de Janeiro|RJ|Brazil|20040-020|594|12
+396|2013-10-08 00:00:00|627 Broadway|New York|NY|USA|10012-2612|891|18
+397|2013-10-13 00:00:00|1033 N Park Ave|Tucson|AZ|USA|85719|1386|27
+398|2013-10-21 00:00:00|11, Place Bellecour|Lyon||France|69002|99|41
+399|2013-11-03 00:00:00|9, Place Louis Barthou|Bordeaux||France|33000|198|42
+400|2013-11-03 00:00:00|Porthaninkatu 9|Helsinki||Finland|00530|198|44
+401|2013-11-04 00:00:00|3 Chatham Street|Dublin|Dublin|Ireland||396|46
+402|2013-11-05 00:00:00|C/ San Bernardo 85|Madrid||Spain|28015|594|50
+403|2013-11-08 00:00:00|307 Macacha Güemes|Buenos Aires||Argentina|1106|891|56
+404|2013-11-13 00:00:00|Rilská 3174/6|Prague||Czech Republic|14300|2586|6
+405|2013-11-21 00:00:00|541 Del Medio Avenue|Mountain View|CA|USA|94040-111|99|20
+406|2013-12-04 00:00:00|801 W 4th Street|Reno|NV|USA|89503|198|21
+407|2013-12-04 00:00:00|69 Salem Street|Boston|MA|USA|2113|198|23
+408|2013-12-05 00:00:00|319 N Frances Street|Madison|WI|USA|53703|396|25
+409|2013-12-06 00:00:00|796 Dundas Street West|Toronto|ON|Canada|M6J 1V1|594|29
+410|2013-12-09 00:00:00|Rua dos Campeões Europeus de Viena, 4350|Porto||Portugal||891|35
+411|2013-12-14 00:00:00|Porthaninkatu 9|Helsinki||Finland|00530|1386|44
+412|2013-12-22 00:00:00|12,Community Centre|Delhi||India|110017|199|58

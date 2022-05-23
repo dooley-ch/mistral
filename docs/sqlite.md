@@ -211,4 +211,4 @@ attributes described above.
 
 ## Deployment
 
-TODO
+A copy of the database file is stored in the sqlite folder.

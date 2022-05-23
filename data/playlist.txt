@@ -1,0 +1,19 @@
+ID|name|name_lower
+1|Music|music
+2|Movies|movies
+3|TV Shows|tv shows
+4|Audiobooks|audiobooks
+5|90‚Äôs Music|90‚Äôs music
+6|Other Audiobooks|other audiobooks
+7|Other Movies|other movies
+8|Other Music|other music
+9|Music Videos|music videos
+10|Other TV Shows|other tv shows
+11|Brazilian Music|brazilian music
+12|Classical|classical
+13|Classical 101 - Deep Cuts|classical 101 - deep cuts
+14|Classical 101 - Next Steps|classical 101 - next steps
+15|Classical 101 - The Basics|classical 101 - the basics
+16|Grunge|grunge
+17|Heavy Metal Classic|heavy metal classic
+18|On-The-Go 1|on-the-go 1

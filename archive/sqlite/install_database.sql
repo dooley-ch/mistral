@@ -29,7 +29,7 @@ CREATE TABLE activity_type(
 
 CREATE TABLE activity_log(
   "ID" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-  logged_at TEXT NOT NULL,
+  logged_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
   message TEXT NOT NULL,
   activity_type_id INTEGER NOT NULL,
   activity_source_id INTEGER NOT NULL,
@@ -41,8 +41,7 @@ CREATE TABLE activity_log(
 
 CREATE INDEX activity_log_ix_activity_type ON activity_log(activity_type_id);
 
-CREATE INDEX activity_log_ix_activity_source ON activity_log(activity_source_id)
-  ;
+CREATE INDEX activity_log_ix_activity_source ON activity_log(activity_source_id);
 
 CREATE TABLE artist(
   "ID" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
@@ -228,3 +227,5 @@ CREATE TABLE invoice_item(
 CREATE INDEX invoice_item_ix_track ON invoice_item("track_ID");
 
 CREATE INDEX invoice_item_ix_invoice ON invoice_item("invoice_ID");
+
+INSERT INTO version(MAJOR, MINOR, BUILD) VALUES (1, 0, 1);

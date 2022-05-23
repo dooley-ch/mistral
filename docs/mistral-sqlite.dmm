@@ -448,7 +448,7 @@
 					"pk": false,
 					"nn": true,
 					"comment": "",
-					"defaultvalue": "",
+					"defaultvalue": "CURRENT_TIMESTAMP",
 					"data": "",
 					"collation": "",
 					"after": "",
@@ -3255,7 +3255,7 @@
 	"model": {
 		"name": "mistral",
 		"id": "c59d5dae-b62a-455a-8a74-feb23c2993e7",
-		"activeDiagram": "dd8b7b90-d564-47ec-b95b-0fb53638b681",
+		"activeDiagram": "184d1ec6-de22-4c8d-815a-9ae6bd85c034",
 		"desc": "",
 		"path": "",
 		"type": "SQLITE",
@@ -3293,7 +3293,8 @@
 			"includeSchema": "always",
 			"quotation": "if_needed"
 		},
-		"lastSaved": "Sat May 21 2022 20:11:11 GMT+0200 (Central European Summer Time)"
+		"lastSaved": "Sat May 21 2022 20:16:57 GMT+0200 (Central European Summer Time)",
+		"writeFileParam": false
 	},
 	"otherObjects": {},
 	"diagrams": {
