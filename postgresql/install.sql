@@ -32,6 +32,19 @@ DROP TABLE IF EXISTS activity_type;
 DROP TABLE IF EXISTS version_item;
 DROP TABLE IF EXISTS "version";
 
+DROP TABLE IF EXISTS xxx_album;
+DROP TABLE IF EXISTS xxx_artist;
+DROP TABLE IF EXISTS xxx_customer;
+DROP TABLE IF EXISTS xxx_employee;
+DROP TABLE IF EXISTS xxx_genre;
+DROP TABLE IF EXISTS xxx_invoice;
+DROP TABLE IF EXISTS xxx_invoice_item;
+DROP TABLE IF EXISTS xxx_media_type;
+DROP TABLE IF EXISTS xxx_playlist;
+DROP TABLE IF EXISTS xxx_playlist_track;
+DROP TABLE IF EXISTS xxx_track;
+
+
 CREATE TABLE "version"(
   id smallint NOT NULL,
   major smallint NOT NULL,
@@ -67,12 +80,14 @@ ALTER TABLE version_item
 CREATE TABLE activity_source(
   id smallint NOT NULL,
   "name" varchar(50) NOT NULL,
-  lock_version smallint NOT NULL,
+  lock_version smallint NOT NULL DEFAULT 1,
   created_at timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP,
   CONSTRAINT activity_source_pkey PRIMARY KEY(id),
   CONSTRAINT activity_source_name UNIQUE("name")
 );
+
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'activity_source created', 1);
 
 CREATE TABLE activity_type(
   id smallint NOT NULL,
@@ -83,6 +98,8 @@ CREATE TABLE activity_type(
   CONSTRAINT activity_type_pkey PRIMARY KEY(id),
   CONSTRAINT activity_type_name UNIQUE("name")
 );
+
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'activity_type created', 1);
 
 CREATE TABLE activity_log(
   id serial NOT NULL,
@@ -101,6 +118,8 @@ ALTER TABLE activity_log
   ADD CONSTRAINT activity_log_activity_type_id_fkey
     FOREIGN KEY (activity_type_id) REFERENCES activity_type (id);
 
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'activity_log created', 1);
+
 CREATE TABLE artist(
   id serial NOT NULL,
   "name" varchar(100) NOT NULL,
@@ -110,6 +129,8 @@ CREATE TABLE artist(
   updated_at timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP,
   CONSTRAINT artist_pkey PRIMARY KEY(id)
 );
+
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'artist created', 1);
 
 CREATE TABLE genre(
   id serial NOT NULL,
@@ -122,6 +143,8 @@ CREATE TABLE genre(
   CONSTRAINT genre_name_key UNIQUE("name")
 );
 
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'genre created', 1);
+
 CREATE TABLE media_type(
   id serial NOT NULL,
   "name" varchar(40) NOT NULL,
@@ -133,6 +156,8 @@ CREATE TABLE media_type(
   CONSTRAINT media_type_name_key UNIQUE("name")
 );
 
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'media_type created', 1);
+
 CREATE TABLE playlist(
   id serial NOT NULL,
   "name" varchar(50) NOT NULL,
@@ -143,6 +168,8 @@ CREATE TABLE playlist(
   CONSTRAINT playlist_pkey PRIMARY KEY(id),
   CONSTRAINT playlist_name_key UNIQUE("name")
 );
+
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'playlist created', 1);
 
 CREATE TABLE album(
   id serial NOT NULL,
@@ -159,14 +186,16 @@ ALTER TABLE album
   ADD CONSTRAINT album_artist_id_fkey
     FOREIGN KEY (artist_id) REFERENCES artist (id);
 
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'album created', 1);
+
 CREATE TABLE track(
   id serial NOT NULL,
   "name" varchar(1500) NOT NULL,
   name_lower varchar(1500) NOT NULL,
   composer varchar(200),
-  milliseconds smallint NOT NULL,
-  bytes smallint NOT NULL,
-  unit_price smallint NOT NULL,
+  "milliseconds" integer NOT NULL,
+  bytes integer NOT NULL,
+  unit_price numeric(6,2) NOT NULL,
   album_id integer NOT NULL,
   genre_id integer NOT NULL,
   media_type_id integer NOT NULL,
@@ -175,6 +204,8 @@ CREATE TABLE track(
   updated_at timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP,
   CONSTRAINT track_pkey PRIMARY KEY(id)
 );
+
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'track created', 1);
 
 CREATE TABLE playlist_track(
   id serial NOT NULL,
@@ -185,6 +216,8 @@ CREATE TABLE playlist_track(
   updated_at timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP,
   CONSTRAINT playlist_track_pkey PRIMARY KEY(id)
 );
+
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'playlist_track created', 1);
 
 CREATE TABLE employee(
   id serial NOT NULL,
@@ -209,6 +242,8 @@ CREATE TABLE employee(
   CONSTRAINT employee_email_key UNIQUE(email)
 );
 
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'employee created', 1);
+
 CREATE TABLE customer(
   id serial NOT NULL,
   title varchar(10),
@@ -230,8 +265,11 @@ CREATE TABLE customer(
   CONSTRAINT customer_email_key UNIQUE(email)
 );
 
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'customer created', 1);
+
 CREATE TABLE invoice(
   id serial NOT NULL,
+  invoice_date date NOT NULL,
   address varchar(60),
   city varchar(40),
   state varchar(20),
@@ -245,6 +283,8 @@ CREATE TABLE invoice(
   CONSTRAINT invoice_pkey PRIMARY KEY(id)
 );
 
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'invoice created', 1);
+
 CREATE TABLE invoice_item(
   id serial NOT NULL,
   quantity smallint NOT NULL,
@@ -256,6 +296,8 @@ CREATE TABLE invoice_item(
   updated_at timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP,
   CONSTRAINT invoice_item_pkey PRIMARY KEY(id)
 );
+
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'invoice_item created', 1);
 
 ALTER TABLE track
   ADD CONSTRAINT track_album_id_fkey FOREIGN KEY (album_id) REFERENCES album (id)
@@ -296,6 +338,8 @@ ALTER TABLE invoice_item
 ALTER TABLE invoice_item
   ADD CONSTRAINT invoice_item_invoice_id_fkey
     FOREIGN KEY (invoice_id) REFERENCES invoice (id);
+
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'foreign keys mapped', 1);
 
 CREATE TABLE xxx_artist(
   id serial NOT NULL,
@@ -361,9 +405,9 @@ CREATE TABLE xxx_track(
   "name" varchar(1500),
   name_lower varchar(1500),
   composer varchar(200),
-  "milliseconds" smallint,
-  bytes smallint,
-  unit_price smallint,
+  "milliseconds" integer,
+  bytes integer,
+  unit_price numeric(6,2),
   album_id integer,
   genre_id integer,
   media_type_id integer,
@@ -431,6 +475,7 @@ CREATE TABLE xxx_invoice(
   "action" char(1) NOT NULL,
   logged_at timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP,
   record_id integer NOT NULL,
+  invoice_date date,
   address varchar(60),
   city varchar(40),
   state varchar(20),
@@ -454,3 +499,7 @@ CREATE TABLE xxx_invoice_item(
   lock_version smallint,
   CONSTRAINT xxx_invoice_item_pkey PRIMARY KEY(id)
 );
+
+INSERT INTO version_item(step, comment, version_id) VALUES ('CREATE', 'audit tables created', 1);
+
+UPDATE "version" SET is_valid = true, lock_version = lock_version + 1, updated_at = CURRENT_TIMESTAMP WHERE (id = 1);

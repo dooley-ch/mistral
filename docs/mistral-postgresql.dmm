@@ -392,7 +392,7 @@
 					"pk": false,
 					"nn": true,
 					"comment": "",
-					"defaultvalue": "",
+					"defaultvalue": "1",
 					"data": "",
 					"collation": null,
 					"list": false,
@@ -1545,7 +1545,7 @@
 				{
 					"id": "4916f619-5bff-4b20-b88c-c263dfbc265a",
 					"name": "milliseconds",
-					"datatype": "smallint",
+					"datatype": "integer",
 					"param": "",
 					"pk": false,
 					"nn": true,
@@ -1562,7 +1562,7 @@
 				{
 					"id": "265d87c1-9e97-4d44-815c-f31163c8332b",
 					"name": "bytes",
-					"datatype": "smallint",
+					"datatype": "integer",
 					"param": "",
 					"pk": false,
 					"nn": true,
@@ -1579,8 +1579,8 @@
 				{
 					"id": "86171140-3b14-43ad-b7a4-fdcd55659359",
 					"name": "unit_price",
-					"datatype": "smallint",
-					"param": "",
+					"datatype": "numeric",
+					"param": "6,2",
 					"pk": false,
 					"nn": true,
 					"comment": "",
@@ -2564,6 +2564,23 @@
 					}
 				},
 				{
+					"id": "5ab440b5-c689-4899-9dfa-93974fbaac34",
+					"name": "invoice_date",
+					"datatype": "date",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"collation": null,
+					"list": false,
+					"after": "",
+					"pg": {
+						"generatedIdentity": "no"
+					}
+				},
+				{
 					"id": "5d224dc8-f548-4e8e-ba2b-4975915bd1eb",
 					"name": "address",
 					"datatype": "varchar",
@@ -3294,7 +3311,7 @@
 	"model": {
 		"name": "Mistral",
 		"id": "f1472c74-6476-4e9d-9242-66fbd396fb06",
-		"activeDiagram": "0731993c-24c9-433f-a112-6e96645b097f",
+		"activeDiagram": "17540fa1-2b25-40f7-8d96-aa827c754370",
 		"desc": "",
 		"path": "",
 		"type": "PG",
@@ -3340,7 +3357,8 @@
 			"indexes": true,
 			"relations": true
 		},
-		"lastSaved": "Tue May 24 2022 19:44:55 GMT+0200 (Central European Summer Time)"
+		"lastSaved": "Tue May 24 2022 21:13:31 GMT+0200 (Central European Summer Time)",
+		"writeFileParam": false
 	},
 	"otherObjects": {},
 	"diagrams": {
@@ -3654,7 +3672,7 @@
 					"referencedItemId": "fa37ce8b-1023-4b02-afd6-2ef38571f296",
 					"x": 563,
 					"y": 1020,
-					"gHeight": 225,
+					"gHeight": 243,
 					"gWidth": 232,
 					"color": "#ffffff",
 					"background": "#03a9f4",

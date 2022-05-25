@@ -131,9 +131,9 @@ erDiagram
         varchar name
         varchar name_lower
         varchar composer
-        smallint milliseconds
-        smallint bytes
-        smallint unit_price
+        integer milliseconds
+        integer bytes
+        numeric unit_price
         integer album_id FK
         integer media_type_id FK
         integer genre_id FK
@@ -162,7 +162,7 @@ erDiagram
     
     invoice {
         serial id PK
-        varchar invoice_date
+        date invoice_date
         varchar address
         varchar city
         varchar state
@@ -215,3 +215,10 @@ erDiagram
         timestamptz updated_at
     }    
 ```
+
+## Deployment
+
+There are two options:
+
+- Restore the database from the backup stored in the postgresql folder.
+- Create a new database using the install.sql script and the data scripts 01 thru 05 to populate the tables.
