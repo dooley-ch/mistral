@@ -40,7 +40,7 @@ ID|title|title_lower|artist_ID
 39|International Superhits|international superhits|54
 40|Into The Light|into the light|55
 41|Meus Momentos|meus momentos|56
-42|Minha História|minha história|57
+42|Minha História__|minha história__|57
 43|MK III The Final Concerts [Disc 1]|mk iii the final concerts [disc 1]|58
 44|Physical Graffiti [Disc 1]|physical graffiti [disc 1]|22
 45|Sambas De Enredo 2001|sambas de enredo 2001|21

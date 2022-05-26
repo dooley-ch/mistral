@@ -1,21 +1,44 @@
-INSERT INTO activity_type (ID, name) VALUES (1, 'Create Customer');
-INSERT INTO activity_type (ID, name) VALUES (2, 'Create Employee');
-INSERT INTO activity_type (ID, name) VALUES (3, 'Create Album');
+-- *******************************************************************************************
+-- **  File:  data_05.sql
+-- **  Created: 26-05-2022
+-- **
+-- **  History:
+-- **  26-05-2022: Initial version
+-- **
+-- *******************************************************************************************
+
+--
+-- Activity Type
+--
+
+INSERT INTO activity_type (id, name) VALUES (1, 'Create Customer');
+INSERT INTO activity_type (id, name) VALUES (2, 'Create Employee');
+INSERT INTO activity_type (id, name) VALUES (3, 'Create Album');
+
+--
+-- Activity Source
+--
 
 INSERT INTO activity_source(ID, name) VALUES (1, 'Application');
 INSERT INTO activity_source(ID, name) VALUES (2, 'System');
 INSERT INTO activity_source(ID, name) VALUES (3, 'User');
 
-INSERT INTO activity_log(activity_type_id, activity_source_id, message)
-SELECT 1, 3, 'New customer: ' || last_name || ', ' || first_name AS message FROM customer;
+--
+-- Activity Log
+--
 
 INSERT INTO activity_log(activity_type_id, activity_source_id, message)
-SELECT 2, 3, 'New Employee: ' || last_name || ', ' || first_name AS message FROM employee;
+SELECT 1, 3, CONCAT('New customer: ', last_name,  ', ',  first_name) AS message FROM customer;
 
 INSERT INTO activity_log(activity_type_id, activity_source_id, message)
-SELECT 3, 2, 'New Album: ' || album.title  AS message FROM album;
+SELECT 2, 3, CONCAT('New Employee: ', last_name, ', ', first_name) AS message FROM employee;
 
-INSERT INTO version(MAJOR, MINOR, BUILD) VALUES (1, 0, 1);
+INSERT INTO activity_log(activity_type_id, activity_source_id, message)
+SELECT 3, 2, CONCAT('New Album: ', album.title)  AS message FROM album;
+
+--
+-- audit tables
+--
 
 INSERT INTO xxx_album(action, record_ID, title, title_lower, artist_ID, lock_version)
     SELECT 'I', id, title, title_lower, artist_id, lock_version FROM album;
@@ -57,3 +80,16 @@ INSERT INTO xxx_track(action, record_ID, name, name_lower, composer, millisecond
                       genre_ID, album_ID, lock_version)
     SELECT 'I', ID, name, name_lower, composer, milliseconds, bytes, unit_price, media_type_ID, genre_ID,
            album_ID, lock_version FROM track;
+
+--
+-- Set the sequence on the tables
+--
+
+ALTER TABLE album AUTO_INCREMENT = 350;
+ALTER TABLE artist AUTO_INCREMENT = 280;
+ALTER TABLE genre AUTO_INCREMENT = 30;
+ALTER TABLE invoice AUTO_INCREMENT = 420;
+ALTER TABLE media_type AUTO_INCREMENT = 10;
+ALTER TABLE playlist AUTO_INCREMENT = 20;
+ALTER TABLE playlist_track AUTO_INCREMENT = 9000;
+ALTER TABLE track AUTO_INCREMENT = 2600;
