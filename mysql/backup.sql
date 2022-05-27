@@ -902,6 +902,21 @@ INSERT INTO `album` VALUES
 UNLOCK TABLES;
 
 --
+-- Temporary table structure for view `albums`
+--
+
+DROP TABLE IF EXISTS `albums`;
+/*!50001 DROP VIEW IF EXISTS `albums`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE TABLE `albums` (
+  `id` tinyint NOT NULL,
+  `title` tinyint NOT NULL,
+  `artist` tinyint NOT NULL
+) ENGINE=MyISAM */;
+SET character_set_client = @saved_cs_client;
+
+--
 -- Table structure for table `artist`
 --
 
@@ -12898,6 +12913,21 @@ INSERT INTO `playlist_track` VALUES
 (8715,597,18,1,'2022-05-26 15:31:13','2022-05-26 15:31:13');
 /*!40000 ALTER TABLE `playlist_track` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Temporary table structure for view `playlists`
+--
+
+DROP TABLE IF EXISTS `playlists`;
+/*!50001 DROP VIEW IF EXISTS `playlists`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE TABLE `playlists` (
+  `id` tinyint NOT NULL,
+  `name` tinyint NOT NULL,
+  `track` tinyint NOT NULL
+) ENGINE=MyISAM */;
+SET character_set_client = @saved_cs_client;
 
 --
 -- Table structure for table `track`
@@ -32372,6 +32402,44 @@ INSERT INTO `xxx_track` VALUES
 (3479,'2022-05-26 15:35:35','I',3503,'Koyaanisqatsi','koyaanisqatsi','Philip Glass',206005,3305164,0.99,347,10,2,1);
 /*!40000 ALTER TABLE `xxx_track` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Final view structure for view `albums`
+--
+
+/*!50001 DROP TABLE IF EXISTS `albums`*/;
+/*!50001 DROP VIEW IF EXISTS `albums`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `albums` AS select `a`.`id` AS `id`,`a`.`title` AS `title`,`aa`.`name` AS `artist` from (`album` `a` join `artist` `aa` on(`aa`.`id` = `a`.`artist_id`)) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `playlists`
+--
+
+/*!50001 DROP TABLE IF EXISTS `playlists`*/;
+/*!50001 DROP VIEW IF EXISTS `playlists`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `playlists` AS select `pl`.`id` AS `id`,`pl`.`name` AS `name`,`t`.`name` AS `track` from ((`playlist` `pl` join `playlist_track` `pt` on(`pl`.`id` = `pt`.`playlist_id`)) join `track` `t` on(`t`.`id` = `pt`.`track_id`)) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -32382,4 +32450,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-26 17:43:28
+-- Dump completed on 2022-05-27 14:00:04

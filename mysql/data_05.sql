@@ -93,3 +93,15 @@ ALTER TABLE media_type AUTO_INCREMENT = 10;
 ALTER TABLE playlist AUTO_INCREMENT = 20;
 ALTER TABLE playlist_track AUTO_INCREMENT = 9000;
 ALTER TABLE track AUTO_INCREMENT = 2600;
+
+--
+-- Views
+--
+
+CREATE VIEW albums AS
+SELECT a.id AS id, a.title, aa.name AS artist FROM album a JOIN artist aa on aa.id = a.artist_id;
+
+CREATE VIEW playlists AS
+    SELECT pl.id AS id, pl.name AS name, t.name AS track FROM playlist pl
+        JOIN playlist_track pt on pl.id = pt.playlist_id
+        JOIN track t on t.id = pt.track_id;

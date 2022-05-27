@@ -75,8 +75,8 @@ erDiagram
      
     customer ||--o{ invoice : ""
      
-    employee ||--o{ customer : "Supporter"
-    employee ||--o{ employee : Manager
+    employee ||--o{ customer : "Supports"
+    employee ||--o{ employee : "Manages"
      
     artist {
         int id PK
@@ -188,7 +188,7 @@ erDiagram
         varchar phone
         varchar fax
         varchar email
-        int supporter_id FK
+        int employee_id FK
         tinyint lock_version
         timestamp created_at
         timestamp updated_at
@@ -216,9 +216,28 @@ erDiagram
     }    
 ```
 
+## Views
+
+The database contains two views, represented here as tables:
+
+```mermaid
+erDiagram
+    albums {
+        integer id "The album id"
+        text artist "The artist's nme"
+        text title "The album title"
+    }
+    
+    playlists {
+        integer id "The playlist id"
+        text name "The playlist name"
+        text track "The track name"
+    }
+```
+
 ## Deployment
 
 There are two options:
 
-- Restore the database from the backup stored in the postgresql folder.
+- Restore the database from the backup (backup.sql) stored in the mysql folder.
 - Create a new database using the install.sql script and the data scripts 01 thru 05 to populate the tables.
