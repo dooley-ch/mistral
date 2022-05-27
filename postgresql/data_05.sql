@@ -100,3 +100,15 @@ alter sequence playlist_id_seq restart with 20;
 alter sequence playlist_track_id_seq restart with 9000;
 
 alter sequence track_id_seq restart with 3600;
+
+--
+-- Views
+--
+
+CREATE VIEW albums AS
+SELECT a.id AS id, a.title, aa.name AS artist FROM album a JOIN artist aa on aa.id = a.artist_id;
+
+CREATE VIEW playlists AS
+    SELECT pl.id AS id, pl.name AS name, t.name AS track FROM playlist pl
+        JOIN playlist_track pt on pl.id = pt.playlist_id
+        JOIN track t on t.id = pt.track_id;

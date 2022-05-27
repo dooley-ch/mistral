@@ -20,7 +20,7 @@ erDiagram
     }
     
     version_item {
-        serial ID PK
+        serial id PK
         varchar step
         varchar comment
         smallint version_id FK
@@ -33,7 +33,7 @@ erDiagram
     activity_type ||--o{ activity_log : ""
     
     activity_log {
-        serial ID PK
+        serial id PK
         timestamptz logged_at  
         test message
         smallint activity_source_id FK
@@ -41,7 +41,7 @@ erDiagram
     }
     
     activity_source {
-        smallint ID PK  
+        smallint id PK  
         varchar name  
         smallint lock_version
         timestamptz created_at
@@ -49,7 +49,7 @@ erDiagram
     }
     
     activity_type {
-        smallint ID PK  
+        smallint id PK  
         varchar name  
         smallint lock_version
         timestamptz created_at
@@ -76,7 +76,7 @@ erDiagram
     customer ||--o{ invoice : ""
      
     employee ||--o{ customer : "Supporter"
-    employee ||--o{ employee : Manager
+    employee ||--o{ employee : "Manages"
      
     artist {
         serial id PK
@@ -188,7 +188,7 @@ erDiagram
         varchar phone
         varchar fax
         varchar email
-        integer supporter_id FK
+        integer employee_id FK
         smallint lock_version
         timestamptz created_at
         timestamptz updated_at
@@ -216,9 +216,28 @@ erDiagram
     }    
 ```
 
+## Views
+
+The database contains two views, represented here as tables:
+
+```mermaid
+erDiagram
+    albums {
+        integer id "The album id"
+        text artist "The artist's nme"
+        text title "The album title"
+    }
+    
+    playlists {
+        integer id "The playlist id"
+        text name "The playlist name"
+        text track "The track name"
+    }
+```
+
 ## Deployment
 
 There are two options:
 
-- Restore the database from the backup stored in the postgresql folder.
+- Restore the database from the backup (backup.tar) stored in the postgresql folder.
 - Create a new database using the install.sql script and the data scripts 01 thru 05 to populate the tables.
