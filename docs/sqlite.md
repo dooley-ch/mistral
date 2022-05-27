@@ -17,8 +17,8 @@ erDiagram
         integer minor
         integer build
         integer lock_version
-        created_at text
-        updated_at text
+        text created_at
+        text updated_at
     }
     
     activity_log {
@@ -34,15 +34,15 @@ erDiagram
         integer ID PK
         text name
         integer lock_version
-        created_at text
-        updated_at text
+        text created_at
+        text updated_at
     }
     
     activity_type {
         integer ID PK    
         integer lock_version
-        created_at text
-        updated_at text
+        text created_at
+        text updated_at
     }
 ```
 
@@ -72,8 +72,8 @@ erDiagram
         text name
         text name_lower
         integer lock_version
-        created_at text
-        updated_at text
+        text created_at
+        text updated_at
     }
     
     album {
@@ -82,8 +82,8 @@ erDiagram
         text title_lower
         integer artist_id FK        
         integer lock_version
-        created_at text
-        updated_at text
+        text created_at
+        text updated_at
     }
     
     playlist {
@@ -91,8 +91,8 @@ erDiagram
         text name
         text name_lower
         integer lock_version
-        created_at text
-        updated_at text
+        text created_at
+        text updated_at
     }
     
     playlist_track {
@@ -100,8 +100,8 @@ erDiagram
         integer playlist_id FK
         integer track_id FK
         integer lock_version
-        created_at text
-        updated_at text
+        text created_at
+        text updated_at
     }
     
     invoice_item {
@@ -111,8 +111,8 @@ erDiagram
         integer track_id FK
         integer invoice_id FK
         integer lock_version
-        created_at text
-        updated_at text
+        text created_at
+        text updated_at
     }
 
     track {
@@ -127,8 +127,8 @@ erDiagram
         integer media_type_id FK
         integer genre_id FK
         integer lock_version
-        created_at text
-        updated_at text
+        text created_at
+        text updated_at
     }
 
     genre {
@@ -136,8 +136,8 @@ erDiagram
         text name
         text name_lower
         integer lock_version
-        created_at text
-        updated_at text
+        text created_at
+        text updated_at
     }
 
     media_type {
@@ -145,8 +145,8 @@ erDiagram
         text name
         text name_lower
         integer lock_version
-        created_at text
-        updated_at text
+        text created_at
+        text updated_at
     }
     
     invoice {
@@ -160,8 +160,8 @@ erDiagram
         integer total
         integer customer_id FK
         integer lock_version
-        created_at text
-        updated_at text
+        text created_at
+        text updated_at
     }
 
     customer {
@@ -178,8 +178,8 @@ erDiagram
         text fax
         text email
         integer lock_version
-        created_at text
-        updated_at text
+        text created_at
+        text updated_at
     }
     
     employee {
@@ -199,8 +199,8 @@ erDiagram
         text email
         integer manager_id FK
         integer lock_version
-        created_at text
-        updated_at text
+        text created_at
+        text updated_at
     }    
 ```
 
@@ -209,6 +209,25 @@ erDiagram
 The audit tables are not modeled as they simply consist of the common fields described in the read me and the business 
 attributes described above.
 
+## Views
+
+The database contains two views, represented here as tables:
+
+```mermaid
+erDiagram
+    albums {
+        integer id "The album id"
+        text artist "The artist's nme"
+        text title "The album title"
+    }
+    
+    playlists {
+        integer id "The playlist id"
+        text name "The playlist name"
+        text track "The track name"
+    }
+```
+
 ## Deployment
 
-A copy of the database file is stored in the sqlite folder.
+The implementation is delivered as a SQLite database file.  To use just copy the file to your working folder.
