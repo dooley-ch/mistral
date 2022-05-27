@@ -5,11 +5,11 @@
 This sample database is broadly based on the [Chinook sample database](https://github.com/lerocha/chinook-database) The
 main difference would be:
 
-- The schema is more typical of a real production database, in that it includes views and store procedures
+- The schema is more typical of a real production database, in that it includes views
 - It is scripted rather than being created by a ORM type tool
 - It includes audit tables to track changes 
 - It supports optimistic concurrency
-- It takes advantage of DBMS specific features where they exist
+- It takes advantage of DBMS specific features where appropriate
 
 In the traditions of Microsoft's demo database naming convention, We offer a European version to stand with Northwind 
 and Chinook - Mistral, named after the French wind of the same name.
@@ -22,15 +22,14 @@ include auditing, views etc. The model includes tables for artists, albums, medi
 ## Database Design
 
 This section gives an overview of the typical modern database design. One of the primary technical design objectives 
-was to make it easy to map to the typical object models offered by languages such as C#, Java or Python for example.
-
-Typically, the design ignores the natural primary key on tables and goes for an auto generated primary key as this 
-makes it easier to load and map records to classes in the chosen programming language.
+was to make it easy to map to the typical object models offered by languages such as C#, Java or Python for example. The 
+design ignores the natural primary key on tables and goes for an auto generated primary key as this makes it easier to 
+load and map records to classes in the chosen programming language.
 
 ### System Tables
 
 All modern databases can benefit from having a couple of standard tables, to address issues such as the database 
-version number, if all updates have been applied to the database and so on. 
+version number for instance. 
 
 #### Version Table
 
